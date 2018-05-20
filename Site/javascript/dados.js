@@ -31,7 +31,7 @@ $( document ).ready(function() {
     console.log(viagens.cada[10000].voyageid  + "  -- ID");
     console.log(regiao.cada[10].region  + "  -- Regiao");
     
-    console.log(regiao.cada.region["Antigua"].lat + "  CENAS");
+    //console.log(regiao.cada.region["Antigua"].lat + "  CENAS");
     
 
 });
