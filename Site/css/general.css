@@ -1,0 +1,30 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    /*para padding ser para dentro*/
+    box-sizing: border-box;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+
+}
+
+body {
+    font-family: "georgia_regular", serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/*//REMOVER LIXO DO MAPA*/
+
+#map > div.mapboxgl-control-container > div.mapboxgl-ctrl-bottom-right,
+#map > div.mapboxgl-control-container > div.mapboxgl-ctrl-bottom-left {
+    display: none;
+}

@@ -9,6 +9,7 @@ $(document).ready(function () {
 
 
 
+
     var mostrar = {
         empresa: [{
                 //MARKER
@@ -115,6 +116,7 @@ $(document).ready(function () {
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/diogoferreira37/cjaoaqxke2sj32rrvbeyzffl2',
+        //style: 'mapbox://styles/mapbox/light-v9',
         center: [-8.426084518432617, 40.20739355701786],
         zoom: 4,
         maxZoom: 16.1,
@@ -356,95 +358,34 @@ $(document).ready(function () {
 
 
 
-    /*————————————————————————*/
-    /*DETETAR CLIQUE CATEGORIA*/
+    map.on('load', function () {
 
-    $('.categorias_empresas li').on('click', function () {
-
-        var categoria_escolhida = $(this).html().toLowerCase();
-        //REMOVE ACENTOS
-        var categoria_escolhida_final = categoria_escolhida.replace(/[áàâã]/g, 'a').replace(/[éèê]/g, 'e').replace(/[óòôõ]/g, 'o').replace(/[úùû]/g, 'u');
-
-
-
-
-        /*FUNCAO PARA ADICIONAR EMPRESA ESCOLHIDA*/
-
-        /*ADD MARKERS TO THE MAP*/
-
-        // add markers to map
-        locais.features.forEach(function (marker, i) {
-
-
-            console.log(categoria_escolhida_final + " :::categoria dinal");
-            console.log(locais.features[i].properties.category + " :::ATUAL");
-
-
-
-            var local_atual = locais.features[i].properties.category;
-            var local_final = local_atual.replace("_map", "s");
-
-            console.log(local_final + " ::::------");
-
-
-            if (categoria_escolhida_final == local_final || categoria_escolhida_final == "todas as categorias") {
-                var nome__e = locais.features[i].properties.title;
-                $("." + nome__e).show();
-
-
+        map.addLayer({
+            "id": "LineString",
+            "type": "line",
+            "source": {
+                "type": "geojson",
+                "data": geojson
+            },
+            "layout": {
+                "line-join": "round",
+                "line-cap": "round"
+            },
+            "paint": {
+                "line-color": "#BF93E4",
+                "line-width": 2
             }
-
-            if (categoria_escolhida_final == "remover todas") {
-
-                mostrar.empresa[i].mostrado = "false";
-                $(".marker").hide();
-            }
-
         });
-
     });
 
 
 
 
 
-    /*—————————————————————————————————*/
-    /*DETETAR CLIQUE EMPRESA INDIVIDUAL*/
-    $('.empresas_individuais li').on('click', function () {
-        var empresa_escolhida = $(this).html();
-        //REMOVE ACENTOS
-        var empresa_escolhida_final = empresa_escolhida.replace(/[áàâã]/g, 'a').replace(/[éèê]/g, 'e').replace(/[óòôõ]/g, 'o').replace(/[úùû]/g, 'u').replace(/\s/g, '');
-
-        console.log(empresa_escolhida_final + " — carregou nesta empresa");
-
-
-        /*FUNCAO PARA ADICIONAR EMPRESA ESCOLHIDA*/
-
-        /*ADD MARKERS TO THE MAP*/
-
-
-        // add markers to map
-        locais.features.forEach(function (marker, i) {
-            console.log("EMPRESA ESTA: " + mostrar.empresa[i].mostrado);
-
-            if (empresa_escolhida_final == locais.features[i].properties.title) {
-
-                if (mostrar.empresa[i].mostrado == "false") {
-
-
-                    $("." + empresa_escolhida_final).show();
-
-                }
-            }
-        });
-
-    });
 
 
 
-
-
-    /*ADD ADICIONAR MARKERS TODOS NO INICO*/
+    /* ADICIONAR MARKERS TODOS NO INICO*/
 
     // add markers to map
     locais.features.forEach(function (marker, i) {
@@ -476,8 +417,8 @@ $(document).ready(function () {
         var categoria_empresa = locais.features[i].properties.category;
         var nome_empresa = locais.features[i].properties.title;
 
-        console.log("nome empresa = " + nome_empresa);
-        console.log("categoria  = " + categoria_empresa);
+        // console.log("nome empresa = " + nome_empresa);
+        //console.log("categoria  = " + categoria_empresa);
 
 
 
@@ -489,92 +430,67 @@ $(document).ready(function () {
 
 
 
-    map.on('load', repositionMarkers);
 
 
 
-    function repositionMarkers() {
-        $(".marker").each(function (i, marker) {
-
-            var currentZoom = map.getZoom();
-            var mexe_zoom = currentZoom / 2;
 
 
+    //map.on('load', repositionMarkers);
 
-            var wd = $(marker).width() / 2;
-            var ht = 30;
+    /*
 
-            /*console.log(wd);*/
+        function repositionMarkers() {
+            $(".marker").each(function (i, marker) {
 
-            var tmp = $(marker).css("transform").replace(')', '');
-            if (tmp !== undefined) {
-                var tokens = tmp.split(',');
-
-                var newCoordX = tokens[4] - wd;
-                var newCoordY = tokens[5] - ht;
-
-                //console.log(newCoordY + " newCoordY");
-
-                /*PARA MOVER COM ZOOM*/
-                var calcu = (currentZoom - 14.02) * 15;
-                newCoordY = newCoordY - calcu;
+                var currentZoom = map.getZoom();
+                var mexe_zoom = currentZoom / 2;
 
 
 
-                $(marker).css({
-                    "transform": "translate(" + newCoordX + "px" + ", " + newCoordY + "px" + ")"
-                });
-            }
-        });
-    }
+                var wd = $(marker).width() / 2;
+                var ht = 30;
+
+              
+
+                var tmp = $(marker).css("transform").replace(')', '');
+                if (tmp !== undefined) {
+                    var tokens = tmp.split(',');
+
+                    var newCoordX = tokens[4] - wd;
+                    var newCoordY = tokens[5] - ht;
+
+                   
+
+                   //mover com o zoom
+                    var calcu = (currentZoom - 14.02) * 15;
+                    newCoordY = newCoordY - calcu;
+
+
+
+                    $(marker).css({
+                        "transform": "translate(" + newCoordX + "px" + ", " + newCoordY + "px" + ")"
+                    });
+                }
+            });
+        }
+        
+        */
 
 
     /*MANTEM NO ZOOM*/
     /* map.on('zoom', repositionMarkers);*/
 
     /*QUANDO SE PARA O ZOOM*/
-    map.on('move', repositionMarkers);
-    map.on('moveend', repositionMarkers);
+    //map.on('move', repositionMarkers);
+    //map.on('moveend', repositionMarkers);
 
 
 
-    map.on('zoomend', function () {
-        //console.log("bruuuummm");
-        repositionMarkers();
-    });
+
+    /* map.on('zoomend', function () {
+         repositionMarkers();
+     });*/
 
 
-
-    /*REMOVER MARKER COM CLICK*/
-    $('.marker').on('click', function () {
-        $(this).hide();
-
-
-        var classss = this.className;
-        var index = classss.split(" ");
-        var index_final = index[1];
-
-
-        /*        $("." + index_final).hide();*/
-
-        console.log("nome_empresa ::: " + index_final);
-
-
-        locais.features.forEach(function (marker, i) {
-
-
-            if (index_final == locais.features[i].properties.title) {
-
-                if (mostrar.empresa[i].mostrado == "true") {
-                    var nome_empresa = locais.features[i].properties.title;
-                    mostrar.empresa[i].mostrado = "false";
-                }
-
-            }
-
-        });
-
-
-    });
 
 });
