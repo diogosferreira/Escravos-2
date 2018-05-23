@@ -1,0 +1,3309 @@
+var viagens = {
+    cada:
+
+[
+            {
+                "voyageid": 3871,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "1844-05-14",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3872,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4649,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4650,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4651,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Matanzas",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4664,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4678,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Santos",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4679,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4681,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Trinidad de Cuba",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4940,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 5119,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 5120,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3873,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-??-??",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3875,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3876,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3879,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-06-05",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3880,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-08-??",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3881,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-05-20",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3882,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-03-??",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3883,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3885,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-10-17",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3886,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-05-26",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3887,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3890,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-08-??",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3891,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-05-15",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3893,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-09-11",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3894,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Trinidad de Cuba",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3895,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Trinidad de Cuba",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3896,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Bahia Honda",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3897,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Cuba; port unspecified",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3898,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Havana",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3899,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Cuba; port unspecified",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3900,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "1843-12-12",
+                "mjslptimp": "Guanimar",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3901,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Cuba; port unspecified",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3902,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Matanzas",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3903,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Cabanas",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3904,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Matanzas",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3905,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Trinidad de Cuba",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3906,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Bahia Honda",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3907,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Cabanas",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3908,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Mariel",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3909,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Cuba; port unspecified",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3910,
+                "mjbyptimp": "Congo River",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1844-03-01",
+                "mjslptimp": "Cuba; port unspecified",
+                "mjselimp": "Cuba",
+                "date_end": "1844-09-05"
+  },
+            {
+                "voyageid": 3911,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Cabanas",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3912,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Guanimar",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3913,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Trinidad de Cuba",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3914,
+                "mjbyptimp": "Quilimane",
+                "majbyimp": "Southeast Africa and Indian Ocean islands",
+                "date_dep": "",
+                "mjslptimp": "Cabo Frio",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3915,
+                "mjbyptimp": "Quilimane",
+                "majbyimp": "Southeast Africa and Indian Ocean islands",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro province",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3916,
+                "mjbyptimp": "Quilimane",
+                "majbyimp": "Southeast Africa and Indian Ocean islands",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro province",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3917,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Macaé",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3918,
+                "mjbyptimp": "Ambriz",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Campos",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3919,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Campos",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3920,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Campos",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3921,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Macaé",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3922,
+                "mjbyptimp": "Gabon",
+                "majbyimp": "Bight of Biafra and Gulf of Guinea islands",
+                "date_dep": "",
+                "mjslptimp": "São Sebastião",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3923,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Ponta Negro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3924,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Macaé",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3925,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Maricá",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3926,
+                "mjbyptimp": "Gabon",
+                "majbyimp": "Bight of Biafra and Gulf of Guinea islands",
+                "date_dep": "",
+                "mjslptimp": "Cabo Frio",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3927,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Cape of Good Hope",
+                "mjselimp": "Southeast Africa and Indian Ocean islands",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3928,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Cape of Good Hope",
+                "mjselimp": "Southeast Africa and Indian Ocean islands",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3929,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "St. Helena",
+                "mjselimp": "West Central Africa and St. Helena",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3930,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Cape of Good Hope",
+                "mjselimp": "Southeast Africa and Indian Ocean islands",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3931,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3932,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3933,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3934,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3850,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "1843-12-24",
+                "mjslptimp": "Freetown",
+                "mjselimp": "Sierra Leone",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3855,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Freetown",
+                "mjselimp": "Sierra Leone",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3878,
+                "mjbyptimp": "Keta",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "1844-04-03",
+                "mjslptimp": "Freetown",
+                "mjselimp": "Sierra Leone",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3884,
+                "mjbyptimp": "Sherbro",
+                "majbyimp": "Sierra Leone",
+                "date_dep": "",
+                "mjslptimp": "Freetown",
+                "mjselimp": "Sierra Leone",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3888,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "1844-06-12",
+                "mjslptimp": "Freetown",
+                "mjselimp": "Sierra Leone",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3889,
+                "mjbyptimp": "Quicombo",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Freetown",
+                "mjselimp": "Sierra Leone",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3892,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Freetown",
+                "mjselimp": "Sierra Leone",
+                "date_end": ""
+  },
+            {
+                "voyageid": 34705,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "1845-??-??",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 41889,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-03-29",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 40272,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-06-13",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 49735,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-09-13",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 47283,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-05-20",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 49890,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-02-11",
+                "mjslptimp": "Pernambuco; port unspecified",
+                "mjselimp": "Pernambuco",
+                "date_end": ""
+  },
+            {
+                "voyageid": 47341,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-01-06",
+                "mjslptimp": "Pernambuco; port unspecified",
+                "mjselimp": "Pernambuco",
+                "date_end": ""
+  },
+            {
+                "voyageid": 46488,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "1845-01-??",
+                "mjslptimp": "Havana",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 46768,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 46257,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 46284,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-06-16",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 46285,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-09-09",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900208,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-09-10",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900209,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900210,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900211,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3439,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-12-??",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3441,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-12-20",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3442,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3443,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-12-??",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3444,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-01-15",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3445,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-12-24",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3446,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-01-11",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3448,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-01-22",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3449,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3450,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-02-20",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3451,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-03-17",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3452,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-03-07",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3453,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-04-19",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3454,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-02-09",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3455,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-05-??",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3456,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-11-29",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3457,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-01-03",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3458,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-06-26",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3461,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-05-22",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3463,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-02-15",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3464,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-03-31",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3471,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3472,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3473,
+                "mjbyptimp": "Whydah",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3474,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3475,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3482,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3485,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3486,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3487,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3488,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3490,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3491,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3492,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3493,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3494,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3495,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3496,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3497,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3501,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-05-29",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3502,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-04-22",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3503,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-06-11",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3504,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "1844-06-??",
+                "mjslptimp": "Santiago de Cuba",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3505,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "1844-04-08",
+                "mjslptimp": "Havana",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3506,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Trinidad de Cuba",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3507,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Cuba; port unspecified",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3508,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "1844-09-07",
+                "mjslptimp": "Cuba; port unspecified",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3509,
+                "mjbyptimp": "Rio Pongo",
+                "majbyimp": "Sierra Leone",
+                "date_dep": "",
+                "mjslptimp": "Cabanas",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3510,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-06-27",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3511,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Macaé",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3512,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Campos",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3513,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro province",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3514,
+                "mjbyptimp": "Lourenço Marques",
+                "majbyimp": "Southeast Africa and Indian Ocean islands",
+                "date_dep": "",
+                "mjslptimp": "Cabo Frio",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3515,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro province",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3516,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Macaé",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3517,
+                "mjbyptimp": "Ambriz",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Macaé",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3518,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Campos",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3519,
+                "mjbyptimp": "Ambriz",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Campos",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3520,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3521,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Cabo Frio",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3522,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Campos",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3523,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "São Sebastião",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3524,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Macaé",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3525,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Campos",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3526,
+                "mjbyptimp": "Mozambique",
+                "majbyimp": "Southeast Africa and Indian Ocean islands",
+                "date_dep": "",
+                "mjslptimp": "Cabo Frio",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3527,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Macaé",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3528,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro province",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3529,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Campos",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3530,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Campos",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3531,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio São Jeso",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3532,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Cabo Frio",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3533,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Macaé",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3534,
+                "mjbyptimp": "Ambriz",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Macaé",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3535,
+                "mjbyptimp": "Ambriz",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Campos",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3536,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Macaé",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3537,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Cabo Frio",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3538,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-01-09",
+                "mjslptimp": "Campos",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3539,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Macaé",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3540,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Macaé",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3541,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Macaé",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3542,
+                "mjbyptimp": "Quilimane",
+                "majbyimp": "Southeast Africa and Indian Ocean islands",
+                "date_dep": "",
+                "mjslptimp": "Cabo Frio",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3543,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Campos",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3544,
+                "mjbyptimp": "Sierra Leone; port unspecified",
+                "majbyimp": "Sierra Leone",
+                "date_dep": "",
+                "mjslptimp": "Cabo Frio",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3545,
+                "mjbyptimp": "Sierra Leone; port unspecified",
+                "majbyimp": "Sierra Leone",
+                "date_dep": "",
+                "mjslptimp": "Cabo de Búzios",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3546,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-04-18",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3547,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-02-27",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3548,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3549,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3551,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3552,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3553,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3554,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3556,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3557,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3558,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3559,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3561,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3562,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3574,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3582,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3592,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Ilha de Itamaric",
+                "mjselimp": "Pernambuco",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4659,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4660,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4661,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-??-??",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4662,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4663,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4665,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4666,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Havana",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4682,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-11-25",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4683,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4684,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1844-12-14",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4687,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4690,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4691,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4692,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-03-18",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4694,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Cabo Frio",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4706,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4707,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4708,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4709,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4710,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Luanda",
+                "mjselimp": "West Central Africa and St. Helena",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4711,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4712,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4714,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4715,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4926,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-08-07",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4943,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4944,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4945,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3877,
+                "mjbyptimp": "Nova Redonda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Pernambuco; port unspecified",
+                "mjselimp": "Pernambuco",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3935,
+                "mjbyptimp": "Mozambique",
+                "majbyimp": "Southeast Africa and Indian Ocean islands",
+                "date_dep": "",
+                "mjslptimp": "Cape of Good Hope",
+                "mjselimp": "Southeast Africa and Indian Ocean islands",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3936,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3937,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3938,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3939,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3940,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3941,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3942,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3447,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "1844-11-02",
+                "mjslptimp": "Freetown",
+                "mjselimp": "Sierra Leone",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3459,
+                "mjbyptimp": "Popo",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "1844-12-06",
+                "mjslptimp": "Freetown",
+                "mjselimp": "Sierra Leone",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3460,
+                "mjbyptimp": "Rio Pongo",
+                "majbyimp": "Sierra Leone",
+                "date_dep": "",
+                "mjslptimp": "Freetown",
+                "mjselimp": "Sierra Leone",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3462,
+                "mjbyptimp": "Popo",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "1845-02-03",
+                "mjslptimp": "Freetown",
+                "mjselimp": "Sierra Leone",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3483,
+                "mjbyptimp": "Coanza River",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-02-04",
+                "mjslptimp": "Freetown",
+                "mjselimp": "Sierra Leone",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3484,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-02-02",
+                "mjslptimp": "Freetown",
+                "mjselimp": "Sierra Leone",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3489,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Freetown",
+                "mjselimp": "Sierra Leone",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4713,
+                "mjbyptimp": "Badagry",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Freetown",
+                "mjselimp": "Sierra Leone",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4764,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Liberia",
+                "mjselimp": "Windward Coast",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4925,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-07-21",
+                "mjslptimp": "Liberia",
+                "mjselimp": "Windward Coast",
+                "date_end": ""
+  },
+            {
+                "voyageid": 40270,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 40273,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-11-20",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 49733,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1846-11-05",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 49877,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 47306,
+                "mjbyptimp": "Ambriz",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 47343,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Pernambuco; port unspecified",
+                "mjselimp": "Pernambuco",
+                "date_end": ""
+  },
+            {
+                "voyageid": 46286,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900212,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1846-01-16",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900213,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900215,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Brazil; region unspecified",
+                "mjselimp": "Other Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900216,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-11-28",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900217,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900218,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3498,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3499,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3500,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3550,
+                "mjbyptimp": "Nova Redonda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "St. Helena",
+                "mjselimp": "West Central Africa and St. Helena",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3555,
+                "mjbyptimp": "Ambriz",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "St. Helena",
+                "mjselimp": "West Central Africa and St. Helena",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3560,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3563,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3564,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3565,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3566,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3567,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3568,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3569,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3570,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1846-02-17",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3571,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3572,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3573,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3575,
+                "mjbyptimp": "Ambriz",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "St. Helena",
+                "mjselimp": "West Central Africa and St. Helena",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3576,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3577,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3578,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3579,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3580,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "1845-12-30",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3581,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "1845-11-18",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3583,
+                "mjbyptimp": "Whydah",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3584,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3585,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3586,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3587,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "1846-06-08",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3588,
+                "mjbyptimp": "Cap Lopez",
+                "majbyimp": "Bight of Biafra and Gulf of Guinea islands",
+                "date_dep": "1846-04-23",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3589,
+                "mjbyptimp": "Whydah",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "1846-04-07",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3590,
+                "mjbyptimp": "Whydah",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "1846-07-03",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3591,
+                "mjbyptimp": "Gabon",
+                "majbyimp": "Bight of Biafra and Gulf of Guinea islands",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3593,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Porto de Galinhas",
+                "mjselimp": "Pernambuco",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3594,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Pernambuco; port unspecified",
+                "mjselimp": "Pernambuco",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3596,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3597,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3621,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3622,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3623,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3624,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3625,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3626,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3627,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3628,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3629,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "St. Helena",
+                "mjselimp": "West Central Africa and St. Helena",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3630,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3631,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3632,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3633,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3634,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3635,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1846-10-09",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3636,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4403,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1845-??-??",
+                "mjslptimp": "Cabanas",
+                "mjselimp": "Cuba",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4562,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4563,
+                "mjbyptimp": "Whydah",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4564,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "1846-09-20",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4565,
+                "mjbyptimp": "Whydah",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4566,
+                "mjbyptimp": "Lagos; Onim",
+                "majbyimp": "Bight of Benin",
+                "date_dep": "1846-10-17",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4695,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1846-10-22",
+                "mjslptimp": "Cabo Frio",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4696,
+                "mjbyptimp": "Ambriz",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Macaé",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4697,
+                "mjbyptimp": "Cap Lopez",
+                "majbyimp": "Bight of Biafra and Gulf of Guinea islands",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro province",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4698,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro province",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4699,
+                "mjbyptimp": "Cap Lopez",
+                "majbyimp": "Bight of Biafra and Gulf of Guinea islands",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro province",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4700,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "1845-12-31",
+                "mjslptimp": "Rio de Janeiro province",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4717,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-12-20",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4718,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1845-12-31",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4719,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1846-02-02",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4720,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1846-02-20",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4721,
+                "mjbyptimp": "Loango",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4722,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4728,
+                "mjbyptimp": "Salinas",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Luanda",
+                "mjselimp": "West Central Africa and St. Helena",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4732,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4760,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4761,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4762,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1846-05-20",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4763,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1846-06-10",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 4946,
+                "mjbyptimp": "Cabinda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 5043,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Maranhão",
+                "mjselimp": "Amazonia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 5122,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "",
+                "mjslptimp": "Cape of Good Hope",
+                "mjselimp": "Southeast Africa and Indian Ocean islands",
+                "date_end": ""
+  },
+            {
+                "voyageid": 5123,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 5124,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3943,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3944,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3945,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3946,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3598,
+                "mjbyptimp": "Gallinhas",
+                "majbyimp": "Sierra Leone",
+                "date_dep": "",
+                "mjslptimp": "Freetown",
+                "mjselimp": "Sierra Leone",
+                "date_end": ""
+  },
+            {
+                "voyageid": 34708,
+                "mjbyptimp": "Africa.; port unspecified",
+                "majbyimp": "Other Africa",
+                "date_dep": "1847-10-01",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 49392,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "1847-10-05",
+                "mjslptimp": "Pernambuco; port unspecified",
+                "mjselimp": "Pernambuco",
+                "date_end": ""
+  },
+            {
+                "voyageid": 49393,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Pernambuco; port unspecified",
+                "mjselimp": "Pernambuco",
+                "date_end": ""
+  },
+            {
+                "voyageid": 47342,
+                "mjbyptimp": "Luanda",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Pernambuco; port unspecified",
+                "mjselimp": "Pernambuco",
+                "date_end": ""
+  },
+            {
+                "voyageid": 46766,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 46767,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900219,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900220,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900221,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Brazil; region unspecified",
+                "mjselimp": "Other Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900222,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900223,
+                "mjbyptimp": "Benguela",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900224,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Bahia; port unspecified",
+                "mjselimp": "Bahia",
+                "date_end": ""
+  },
+            {
+                "voyageid": 900225,
+                "mjbyptimp": "West Central Africa and St. Helena; port unspecified",
+                "majbyimp": "West Central Africa and St. Helena",
+                "date_dep": "",
+                "mjslptimp": "Rio de Janeiro",
+                "mjselimp": "Southeast Brazil",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3595,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3599,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3600,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3602,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1847-02-18",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3603,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1847-02-11",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3605,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1847-03-08",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3607,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3608,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3609,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "1847-05-20",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3612,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3617,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3619,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3637,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3638,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3639,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  },
+            {
+                "voyageid": 3640,
+                "mjbyptimp": "",
+                "majbyimp": "",
+                "date_dep": "",
+                "mjslptimp": "",
+                "mjselimp": "",
+                "date_end": ""
+  }
+]
+};
