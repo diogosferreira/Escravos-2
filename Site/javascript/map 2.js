@@ -12,7 +12,7 @@ var chegadaLng = 0;
 var ate = 0;
 
 
-var cor = '#33C9EB';
+//var cor = '#33C9EB';
 
 
 $(document).ready(function () {
@@ -157,7 +157,7 @@ $(document).ready(function () {
                     'features': [{
                         'type': 'Feature',
                         'properties': {
-                            'color': '#F7455D' // red
+                            //'color': '#F7455D' // red
                         },
                         'geometry': {
                             'type': 'LineString',
@@ -170,8 +170,8 @@ $(document).ready(function () {
                 }
             },
             'paint': {
-                'line-width': 0.2,
-                'line-opacity': .3,
+                'line-width': 1,
+                'line-opacity': .05,
                 // Use a get expression (https://www.mapbox.com/mapbox-gl-js/style-spec/#expressions-get)
                 // to set the line-color to a feature property value.
                 'line-color': ['get', 'color']
@@ -230,7 +230,7 @@ $(document).ready(function () {
 
 
             //if(partidaLat)
-            
+
 
 
             //ADICIONAR LINHAS
@@ -238,7 +238,9 @@ $(document).ready(function () {
                 'id': 'testa',
                 'type': 'Feature',
                 'properties': {
-                    'color': '#ff0000' // blue
+                    'color': '#ff0000', // blue
+                    'id': id,
+                    "description": id
                 },
                 'geometry': {
                     'type': 'LineString',
@@ -282,14 +284,55 @@ $(document).ready(function () {
 
 
 
+        /*  ----->
+            ----->
+            ----->
+----->        //https://www.mapbox.com/mapbox-gl-js/example/popup-on-click/
+*/
 
 
-        map.on("mousemove", "testa", function (e) {
-            console.log("EM cima dela");
+
+        //map.on('click', 'lines', function (e) {
+        map.on('mouseenter', 'lines', function (e) {
+            //var features = map.queryRenderedFeatures(e.point);
+            //console.log(JSON.stringify(features, null, 1));
+
+
+            var coordinates = e.features[0].geometry.coordinates.slice();
+            var description = e.features[0].properties.description;
+
+
+
+
+            console.log(coordinates);
+            console.log(description);
+
+
+
+
+            popup = new mapboxgl.Popup({
+                    closeOnClick: true
+                })
+                .setLngLat(e.lngLat)
+                .setHTML('<h1>Hello World!</h1>')
+                .addTo(map);
+
+
+            //document.getElementById('features').innerHTML = JSON.stringify(features, null, 2);
         });
 
 
 
+        map.on('mouseleave', 'lines', function () {
+            map.getCanvas().style.cursor = '';
+            popup.remove();
+        });
+
+
+
+        /*map.on("mousemove", "testa", function (e) {
+            console.log("EM cima dela");
+        });*/
 
 
 
