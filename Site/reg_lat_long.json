@@ -297,5 +297,94 @@ var regiao = {
                 "lat": 7.096124,
                 "long": -11.053379
   }
+
+    //NOVOS
+    ,
+            {
+                "region": "Bight of Biafra and Gulf of Guinea islands",
+                "lat": 3.333,
+                "long": 9.333
+  },
+            {
+                "region": "Danish West Indies",
+                "lat": 18.3333,
+                "long": -64.8333
+  },
+            {
+                "region": "Hispaniola",
+                "lat": 19.00187,
+                "long": -71.57240
+  },
+            {
+                "region": "Other Africa",
+                "lat": -16.99727,
+                "long": 14.29368
+  },
+            {
+                "region": "Other Brazil",
+                "lat": -20.43979,
+                "long": -41.90575
+  },
+            {
+                "region": "British West Indies",
+                "lat": 18.09401,
+                "long": -67.89288
+  },
+            {
+                "region": "French West Indies",
+                "lat": 16.73687,
+                "long": -62.18677
+  },
+            {
+                "region": "Other North America",
+                "lat": 50.74178,
+                "long": -61.75729
+  },
+            {
+                "region": "Other Spanish",
+                "lat": 21.34637,
+                "long": -77.69010
+  },
+            {
+                "region": "Spanish Circum-Caribbean",
+                "lat": 21.34637,
+                "long": -77.69010
+  },
+            {
+                "region": "Other Caribbean",
+                "lat": 21.34637,
+                "long": -77.69010
+  },
+            {
+                "region": "Southeast Africa and Indian Ocean islands",
+                "lat": 3.20278,
+                "long": 73.22068
+  },
+            {
+                "region": "Southeast Brazil",
+                "lat": -18.9349365234375,
+                "long": 11.178401873711778
+  },
+            {
+                "region": "Southeast Brazil",
+                "lat": -18.9349365234375,
+                "long": 11.178401873711778
+  },
+            {
+                "region": "Spanish Americas",
+                "lat": 9.33837890625,
+                "long": 3.3379539614164884
+  }
+    
+
+    
+
+
+
+
+
+
+
+
 ]
 };
