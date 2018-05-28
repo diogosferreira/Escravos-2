@@ -3,15 +3,6 @@
 var content;
 
 
-var partidaLat;
-var partidaLng;
-
-var chegadaLat;
-var chrgadaLng;
-
-var ate = 0;
-
-
 $(document).ready(function () {
 
     mapboxgl.accessToken = 'pk.eyJ1IjoiZGlvZ29mZXJyZWlyYTM3IiwiYSI6ImNqOWZiMTR4OTJqM3MyeW53YzN6aGJkZjMifQ.4uRgggZMty_qeQhE8xxckA';
@@ -126,8 +117,13 @@ $(document).ready(function () {
         container: 'map',
         style: 'mapbox://styles/diogoferreira37/cjaoaqxke2sj32rrvbeyzffl2',
         //style: 'mapbox://styles/mapbox/light-v9',
+<<<<<<< HEAD
         center: [-6.837674, 41.165732],
         zoom: 8,
+=======
+        center: [-8.426084518432617, 40.20739355701786],
+        zoom: 4,
+>>>>>>> 403fb22884a13bafd88ab124612500fb360ecf30
         maxZoom: 16.1,
         minZoom: 8,
         maxBounds: bounds, // Sets bounds as max
@@ -136,42 +132,268 @@ $(document).ready(function () {
     });
 
 
+    /*LOAD JEOJSON DATA*/
+
+
+    var locais = {
+        type: 'FeatureCollection',
+        features: [{
+                //MARKER
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.432578, 40.211312]
+                },
+                properties: {
+                    title: 'Marciano',
+                    category: 'materiais'
+                }
+  },
+            {
+                //MARKER
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.425591, 40.204640]
+                },
+                properties: {
+                    title: 'FBA',
+                    category: 'empresa_map'
+                }
+  },
+            {
+                //MARKER
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.426501, 40.213426]
+                },
+                properties: {
+                    title: 'Burocratik',
+                    /*description: 'Ssome',*/
+                    category: 'empresa_map'
+                }
+  },
+            {
+                //MARKER
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.414568, 40.192072]
+                },
+                properties: {
+                    title: 'Whitesmith',
+                    /*description: 'Ssome',*/
+                    category: 'empresa_map'
+                }
+  },
+            {
+                //MARKER — Deemaze
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.420668, 40.206588]
+                },
+                properties: {
+                    title: 'Deemaze',
+                    /*description: 'Ssome',*/
+                    category: 'empresa_map'
+                }
+  },
+            {
+                //MARKER
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.432907, 40.195667]
+                },
+                properties: {
+                    title: 'mialo',
+                    /*description: 'Ssome',*/
+                    category: 'empresa_map'
+                }
+  },
+            {
+                //MARKER
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.401218, 40.203470]
+                },
+                properties: {
+                    title: 'studioPrint',
+                    /*description: 'Ssome',*/
+                    category: 'impressao'
+                }
+  },
+            {
+                //MARKER
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.401528, 40.210232]
+                },
+                properties: {
+                    title: 'Ogami',
+                    /*description: 'Ssome',*/
+                    category: 'impressao'
+                }
+  },
+            {
+                //MARKER
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.406180, 40.192823]
+                },
+                properties: {
+                    title: 'MauMaria',
+                    /*description: 'Ssome',*/
+                    category: 'empresa_map'
+                }
+  },
+            {
+                //MARKER
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.4343, 40.219453]
+                },
+                properties: {
+                    title: 'Pantone4',
+                    /*description: 'Ssome',*/
+                    category: 'materiais'
+                }
+  },
+            {
+                //MARKER
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.4310, 40.219719]
+                },
+                properties: {
+                    title: 'DualPrint',
+                    /*description: 'Ssome',*/
+                    category: 'materiais'
+                }
+  },
+            {
+                //MARKER
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.427147, 40.212311]
+                },
+                properties: {
+                    title: 'Damasceno',
+                    /*description: 'Ssome',*/
+                    category: 'impressao'
+                }
+  },
+            {
+                //MARKER
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.42, 40.212]
+                },
+                properties: {
+                    title: 'ui-ux',
+                    /*description: 'Ssome',*/
+                    category: 'estagio'
+                }
+  },
+            {
+                //MARKER
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.411879539489746, 40.18985666689439]
+                },
+                properties: {
+                    title: 'Design',
+                    /*description: 'Ssome',*/
+                    category: 'estagio'
+                }
+  },
+            {
+                //MARKER
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.418059349060059, 40.1963147035562]
+                },
+                properties: {
+                    title: 'DesignGrafico',
+                    /*description: 'Ssome',*/
+                    category: 'estagio'
+                }
+  },
+            {
+                //MARKER
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.42977523803711, 40.226007197520055]
+                },
+                properties: {
+                    title: 'Fig',
+                    /*description: 'Ssome',*/
+                    category: 'impressao'
+                }
+  },
+            {
+                //MARKER
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-8.445353507995605, 40.20385376516079]
+                },
+                properties: {
+                    title: 'LitoCoimbra',
+                    /*description: 'Ssome',*/
+                    category: 'impressao'
+                }
+  }
+
+<<<<<<< HEAD
+        viagens.cada.forEach(function (marker, i) {
+=======
+
+                  ]
+    };
+
+>>>>>>> 403fb22884a13bafd88ab124612500fb360ecf30
 
 
     map.on('load', function () {
 
-        viagens.cada.forEach(function (marker, i) {
-
-
-            //var id = String(viagens.cada[i].voyageid);
-            var id = String(i);
-            //console.log(id);
-
-
-            var regiaoPartida = viagens.cada[i].majbyimp;
-            var regiaoChegada = viagens.cada[i].mjselimp;
-            
-            console.log(regiaoPartida + " -- partida");
-            console.log(regiaoChegada + " -- chegada");
-
-
-            regiao.cada.forEach(function (marker, i) {
-                
-                if (regiaoPartida == regiao.cada[i].region) {
-                    partidaLat = regiao.cada[i].lat;
-                    partidaLng = regiao.cada[i].long;
-                    
-                    //console.log(partidaLat);
-                }
-
-                if (regiaoChegada == regiao.cada[i].region) {
-                    chegadaLat = regiao.cada[i].lat;
-                    chegadaLng = regiao.cada[i].long;
-                }
-            });
+        map.addLayer({
+            "id": "LineString",
+            "type": "line",
+            "source": {
+                "type": "geojson",
+                "data": geojson
+            },
+            "layout": {
+                "line-join": "round",
+                "line-cap": "round"
+            },
+            "paint": {
+                "line-color": "#BF93E4",
+                "line-width": 2
+            }
+        });
+    });
 
 
 
+
+
+
+
+<<<<<<< HEAD
             console.log(partidaLat + " partida");
             console.log(partidaLng + " partida LNG");
             
@@ -235,12 +457,56 @@ $(document).ready(function () {
         });
 
         //For each
+=======
+
+    /* ADICIONAR MARKERS TODOS NO INICO*/
+
+    // add markers to map
+    locais.features.forEach(function (marker, i) {
+
+        var categoria_empresa = locais.features[i].properties.category;
+        var nome_empresa = locais.features[i].properties.title;
+
+        /*CRIAR DIV DA EMPRESA*/
+        var el = document.createElement('div');
+
+        /*DAR CLASS*/
+        el.className = categoria_empresa + " " + nome_empresa + " marker";
+
+
+
+        // make a marker for each feature and add to the map
+        new mapboxgl.Marker(el)
+            .setLngLat(marker.geometry.coordinates)
+            .addTo(map);
+>>>>>>> 403fb22884a13bafd88ab124612500fb360ecf30
     });
 
 
+    $(".marker").append("<div class='border-nice'> </div>");
 
+
+<<<<<<< HEAD
     //DETETAR HOVER NA LAYER
     //map.on("mouseover", id, function () {    });
+=======
+    /*ADICINAR TEXTO*/
+    locais.features.forEach(function (marker, i) {
+
+        var categoria_empresa = locais.features[i].properties.category;
+        var nome_empresa = locais.features[i].properties.title;
+
+        // console.log("nome empresa = " + nome_empresa);
+        //console.log("categoria  = " + categoria_empresa);
+
+
+
+        /*ADICINAR NOME DE EMPRESA A SUA DIV*/
+        $("<p class='marker_nome_empresa'>" + nome_empresa + "</p>").appendTo("." + nome_empresa);
+
+    });
+
+>>>>>>> 403fb22884a13bafd88ab124612500fb360ecf30
 
 
 
@@ -306,5 +572,5 @@ $(document).ready(function () {
      });*/
 
 
-    //MAPA
+
 });
