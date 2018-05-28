@@ -7,7 +7,7 @@ var map;
 var teste;
 
 
-var idLayer = 0; 
+var idLayer = 0;
 
 
 var partidaLat = 0;
@@ -46,12 +46,14 @@ $(document).ready(function () {
 
 
 
-    
-    
-    
+
+
+
     map.on('load', function () {
-        
-        desenhaLinhas();
+
+        //desenhaLinhas(1566);
+
+
 
         //map.on('click', 'lines', function (e) {
         map.on('mouseenter', 'lines', function (e) {
@@ -88,12 +90,14 @@ $(document).ready(function () {
 
 
 
-function desenhaLinhas() {
+function desenhaLinhas(anoInicialSlider) {
 
-    if(idLayer>0)
-    map.removeLayer(idLayer);
-    
+    if (idLayer > 0) {
+        map.removeLayer(idLayer);
+    }
+
     idLayer++;
+
 
     teste = {
         'id': String(idLayer),
@@ -102,12 +106,7 @@ function desenhaLinhas() {
             'type': 'geojson',
             'data': {
                 'type': 'FeatureCollection',
-                'features': [{
-                    'type': 'Feature',
-                    'properties': {
-                        //'color': '#F7455D' // red
-                    }
-                }]
+                'features': []
             }
         },
         'paint': {
@@ -121,52 +120,49 @@ function desenhaLinhas() {
     viagens.cada.forEach(function (marker, i) {
 
 
-        //var id = String(viagens.cada[i].voyageid);
-        var id = String(i);
-        //console.log(id);
+            //var id = String(viagens.cada[i].voyageid);
+            var id = trips.cada[i].id;
+            //console.log(id);
 
 
-        var regiaoPartida = trips.cada[i].regiao_compra;
+            var regiaoPartida = trips.cada[i].regiao_compra;
 
-        var regiaoChegada = trips.cada[i].regiao_chegada;
-
-
-        //ANOS
-        var partida = trips.cada[i].ano;
-        var dataPartida = partida.substr(0, partida.indexOf('-'));
+            var regiaoChegada = trips.cada[i].regiao_chegada;
 
 
-        var comprimento = dataPartida.length;
-
-
-        //console.log(dataPartida);
-
-
-        //var chegada = viagens.cada[i].date_end;
-        //var dataChegada = chegada.substr(0, chegada.indexOf('-'));
+            //ANOS
+            var partida = trips.cada[i].ano;
+            var dataPartida = parseInt(partida.substr(0, partida.indexOf('-')));
 
 
 
 
-        //TESTA SE AS LINHAS ESTAO NO SLIDER
-        if (dataPartida >= ano_inicial && dataPartida <= ano_final || comprimento == 0) {
+            //console.log(ano_inicial + " i " + ano_final + "   f");
 
+
+            //TESTA SE AS LINHAS ESTAO NO SLIDER
+            //if (dataPartida >= ano_inicial) {
+
+
+            //console.log("partida   " + dataPartida);
+            //console.log("inicial   " + ano_inicial);
+            //console.log("final   " + ano_final);
 
             //VAI BUSCAR REGIOES
-            regiao.cada.forEach(function (marker, i) {
-                if (regiaoPartida == regiao.cada[i].region) {
-                    partidaLat = regiao.cada[i].lat;
-                    partidaLng = regiao.cada[i].long;
+            regiao.cada.forEach(function (marker, l) {
+                if (regiaoPartida == regiao.cada[l].region) {
+                    partidaLat = regiao.cada[l].lat;
+                    partidaLng = regiao.cada[l].long;
+
+                    //console.log(regiaoPartida + "  ... " + i);
 
                 }
 
-                if (regiaoChegada == regiao.cada[i].region) {
-                    chegadaLat = regiao.cada[i].lat;
-                    chegadaLng = regiao.cada[i].long;
+                if (regiaoChegada == regiao.cada[l].region) {
+                    chegadaLat = regiao.cada[l].lat;
+                    chegadaLng = regiao.cada[l].long;
                 }
             });
-
-
 
 
 
@@ -184,11 +180,11 @@ function desenhaLinhas() {
 
 
 
-
-
-
+            if (dataPartida >= ano_inicial) {
+                //console.log(ano_inicial);
+                
             //ADICIONAR LINHAS
-            teste.source.data.features[i] = {
+            teste.source.data.features.push ( {
                 'id': 'testa',
                 'type': 'Feature',
                 'properties': {
@@ -205,15 +201,15 @@ function desenhaLinhas() {
                             [chegadaLng, chegadaLat]
                         ]
                 }
-            };
-
+            });
 
 
 
             //FECHA IF DO SLIDER
+        } else {
+            //console.log(id + "   iDDDDD");
+            
         }
-
-
 
     });
 
@@ -221,32 +217,24 @@ function desenhaLinhas() {
 
 
 
+//ADICIONAR LINHAS
+/*teste.source.data.features[1] = {
+    'type': 'Feature',
+    'properties': {
+        'color': '#33C9EB' // blue
+    },
+    'geometry': {
+        'type': 'LineString',
+        'coordinates': [
+                    [-122.433, 37.829016],
+                    [0, 0]
+                ]
+    }
+};*/
+
+///console.log(teste.source.data.features[1]);
 
 
-
-
-    //ADICIONAR LINHAS
-    /*teste.source.data.features[1] = {
-        'type': 'Feature',
-        'properties': {
-            'color': '#33C9EB' // blue
-        },
-        'geometry': {
-            'type': 'LineString',
-            'coordinates': [
-                        [-122.433, 37.829016],
-                        [0, 0]
-                    ]
-        }
-    };*/
-
-    ///console.log(teste.source.data.features[1]);
-
-
-
-
-    map.addLayer(teste);
-
-
+map.addLayer(teste);
 
 }
