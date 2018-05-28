@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> VI</title>
+    <meta name="description" content="Locais de interesse para designer">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="images/icon/icon.png">
+
+    <!-- ——— CSS ——— -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/mapa.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <!--<link rel="stylesheet" href="css/loading.css">-->
+
+    <!--MAPBOX STYLE-->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+
+
+    <!--MAPA-->
+    <div id='map'></div>
+
+
+
+    <!--HOVERLAY/  LOADER-->
+    <div class="loading_hoverlay">
+        <div class="spinner1">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+
+
+
+
+    <!--//SLIDER-->
+    <!--————————————————-->
+    <!--————————————————-->
+    <!--————————————————-->
+    <div class="slider-temporal">
+        <div class="containertempo">
+            <p>
+                <label for="amount">Intervalo de tempo —  </label>
+                <input type="text" id="amount-anos" readonly style="border:0; color:#00ff00; font-weight:bold;">
+            </p>
+            <br>
+            <div class="slider_container">
+                <div class="slider-range"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+<!--JQUERY-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+
+
+<!--UI-->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!--SLIDER-->
+<link rel="stylesheet" href="css/progress_bar.css">
+
+<!--MAPBOX-->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.js'></script>
+
+
+<!--MEUS SCRIPTS-->
+<script type="text/javascript" src="viagens.json"></script>
+<script type="text/javascript" src="reg_lat_long.json"></script>
+<script type="text/javascript" src="data.json"></script>
+
+
+
+<script src="javascript/leaflet-src.js"></script>
+
+<script src="javascript/dados.js"></script>
+<script src="javascript/slider.js"></script>
+<script src="javascript/map%202.js"></script>
+<!--<script src="javascript/load.js"></script>-->
+
+
+</html>

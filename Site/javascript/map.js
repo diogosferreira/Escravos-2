@@ -124,13 +124,13 @@ $(document).ready(function () {
 
     var map = new mapboxgl.Map({
         container: 'map',
-        //style: 'mapbox://styles/diogoferreira37/cjaoaqxke2sj32rrvbeyzffl2',
-        style: 'mapbox://styles/mapbox/light-v9',
-        center: [-8.426084518432617, 40.20739355701786],
-        zoom: 0,
+        style: 'mapbox://styles/diogoferreira37/cjaoaqxke2sj32rrvbeyzffl2',
+        //style: 'mapbox://styles/mapbox/light-v9',
+        center: [-6.837674, 41.165732],
+        zoom: 8,
         maxZoom: 16.1,
-        //minZoom: 8,
-        //maxBounds: bounds, // Sets bounds as max
+        minZoom: 8,
+        maxBounds: bounds, // Sets bounds as max
         //preserveDrawingBuffer: true
 
     });
@@ -139,8 +139,6 @@ $(document).ready(function () {
 
 
     map.on('load', function () {
-
-
 
         viagens.cada.forEach(function (marker, i) {
 
@@ -181,7 +179,7 @@ $(document).ready(function () {
             //console.log(chegadaLat + " chegada");
             //console.log(chegadaLng + " chegada LNG");
             
-            console.log(" ---- ");
+            //console.log(" ---- ");
             
             
             if(chegadaLat == undefined) {
@@ -212,6 +210,10 @@ $(document).ready(function () {
             };
 
 
+            
+            
+            
+            
             //ADICONA AS LINHAS AO MAPA
             map.addLayer({
                 "id": id,
@@ -232,17 +234,8 @@ $(document).ready(function () {
             });
         });
 
-
-
-
         //For each
     });
-
-
-
-
-
-
 
 
 
