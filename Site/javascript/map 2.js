@@ -117,74 +117,81 @@ function desenhaLinhas(anoInicialSlider) {
     }
 
 
-    viagens.cada.forEach(function (marker, i) {
+    //viagens.cada.forEach(function (marker, i) {
+
+    for (var i = 0; i < viagens.cada.length; i++) {
 
 
-            //var id = String(viagens.cada[i].voyageid);
-            var id = trips.cada[i].id;
-            //console.log(id);
+        //var id = String(viagens.cada[i].voyageid);
+        var id = trips.cada[i].id;
+        //console.log(id);
 
 
-            var regiaoPartida = trips.cada[i].regiao_compra;
+        var regiaoPartida = trips.cada[i].regiao_compra;
 
-            var regiaoChegada = trips.cada[i].regiao_chegada;
-
-
-            //ANOS
-            var partida = trips.cada[i].ano;
-            var dataPartida = parseInt(partida.substr(0, partida.indexOf('-')));
+        var regiaoChegada = trips.cada[i].regiao_chegada;
 
 
-
-
-            //console.log(ano_inicial + " i " + ano_final + "   f");
-
-
-            //TESTA SE AS LINHAS ESTAO NO SLIDER
-            //if (dataPartida >= ano_inicial) {
-
-
-            //console.log("partida   " + dataPartida);
-            //console.log("inicial   " + ano_inicial);
-            //console.log("final   " + ano_final);
-
-            //VAI BUSCAR REGIOES
-            regiao.cada.forEach(function (marker, l) {
-                if (regiaoPartida == regiao.cada[l].region) {
-                    partidaLat = regiao.cada[l].lat;
-                    partidaLng = regiao.cada[l].long;
-
-                    //console.log(regiaoPartida + "  ... " + i);
-
-                }
-
-                if (regiaoChegada == regiao.cada[l].region) {
-                    chegadaLat = regiao.cada[l].lat;
-                    chegadaLng = regiao.cada[l].long;
-                }
-            });
+        //ANOS
+        var partida = trips.cada[i].ano;
+        var dataPartida = parseInt(partida.substr(0, partida.indexOf('-')));
 
 
 
 
-            //CORES DAS LINHAS
-            if (i % 2 == 0) {
-                color = '#ff0000';
+        //console.log(ano_inicial + " i " + ano_final + "   f");
+
+
+        //TESTA SE AS LINHAS ESTAO NO SLIDER
+        //if (dataPartida >= ano_inicial) {
+
+
+        //console.log("partida   " + dataPartida);
+        //console.log("inicial   " + ano_inicial);
+        //console.log("final   " + ano_final);
+
+        //VAI BUSCAR REGIOES
+
+        for (var l = 0; l < regiao.cada.length; l++) {
+
+            //regiao.cada.forEach(function (marker, l) {
+            if (regiaoPartida == regiao.cada[l].region) {
+                partidaLat = regiao.cada[l].lat;
+                partidaLng = regiao.cada[l].long;
+
+                //console.log(regiaoPartida + "  ... " + i);
+
             }
 
-            if (i % 2 == 1) {
-                color = '#4155eb';
+            if (regiaoChegada == regiao.cada[l].region) {
+                chegadaLat = regiao.cada[l].lat;
+                chegadaLng = regiao.cada[l].long;
             }
 
-            var stroke = .2;
+        }
+        //});
 
 
 
-            if (dataPartida >= ano_inicial) {
-                //console.log(ano_inicial);
-                
+
+        //CORES DAS LINHAS
+        if (i % 2 == 0) {
+            color = '#ff0000';
+        }
+
+        if (i % 2 == 1) {
+            color = '#4155eb';
+        }
+
+        var stroke = .2;
+
+
+
+        if (dataPartida >= ano_inicial) {
+            //console.log(ano_inicial);
+
             //ADICIONAR LINHAS
-            teste.source.data.features.push ( {
+            teste.source.data.features.push({
                 'id': 'testa',
                 'type': 'Feature',
                 'properties': {
@@ -208,33 +215,36 @@ function desenhaLinhas(anoInicialSlider) {
             //FECHA IF DO SLIDER
         } else {
             //console.log(id + "   iDDDDD");
-            
+
         }
 
-    });
 
 
-
-
-
-//ADICIONAR LINHAS
-/*teste.source.data.features[1] = {
-    'type': 'Feature',
-    'properties': {
-        'color': '#33C9EB' // blue
-    },
-    'geometry': {
-        'type': 'LineString',
-        'coordinates': [
-                    [-122.433, 37.829016],
-                    [0, 0]
-                ]
     }
-};*/
-
-///console.log(teste.source.data.features[1]);
+    //});
 
 
-map.addLayer(teste);
+
+
+
+    //ADICIONAR LINHAS
+    /*teste.source.data.features[1] = {
+        'type': 'Feature',
+        'properties': {
+            'color': '#33C9EB' // blue
+        },
+        'geometry': {
+            'type': 'LineString',
+            'coordinates': [
+                        [-122.433, 37.829016],
+                        [0, 0]
+                    ]
+        }
+    };*/
+
+    ///console.log(teste.source.data.features[1]);
+
+
+    map.addLayer(teste);
 
 }

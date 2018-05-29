@@ -20,6 +20,8 @@ $(function () {
 });
 
 
+
+
 /*DETETAR SLIDE*/
 $('.slider-range').on('slide', function (event, ui) {
     var x = $(".slider-range").slider("values", 1);
