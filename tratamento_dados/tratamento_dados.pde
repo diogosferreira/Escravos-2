@@ -3,17 +3,21 @@ JSONArray data, reg_partidas, reg_chegadas;
 
 void setup() {
 
-  original = loadTable("tabela_original.csv", "header");
-  criaTabelaAnos();
+  //original = loadTable("tabela_original.csv", "header");
+  //criaTabelaAnos();
   //criaJSON();
   criaTabelaPrimeiraVista();
-  
-  
+
+
   println("FIM");
 }
 
 void draw() {
 }
+
+//--------------------------------
+//--------------------------------
+//--------------------------------
 
 void criaTabelaAnos() {
 
@@ -69,40 +73,46 @@ void criaJSON() {
 
 void criaTabelaPrimeiraVista() {
 
-  tabela_primeira_vista = new Table();
-  tabela_primeira_vista.addColumn("partida");
-  tabela_primeira_vista.addColumn("num_partida");
-  tabela_primeira_vista.addColumn("chegada");
-  tabela_primeira_vista.addColumn("num_chegada");
+  boolean parou;
 
-  for (TableRow linha : tabela_anos.rows()) {
+  Table t = loadTable("tabela_anos.csv", "header");
+  Table primeira_vista = new Table();
+  primeira_vista.addColumn("partida");
+  primeira_vista.addColumn("chegada");
+  primeira_vista.addColumn("nPartida");
+  primeira_vista.addColumn("nChegada");
+  //---------
+  TableRow primeiraLinha = primeira_vista.addRow();
+  primeiraLinha.setString("partida", t.getRow(0).getString("regiao_compra"));
+  primeiraLinha.setString("chegada", t.getRow(0).getString("regiao_chegada"));
+  primeiraLinha.setString("nPartida", t.getRow(0).getString("embarcados"));
+  primeiraLinha.setString("nChegada", t.getRow(0).getString("desembarcados"));
 
-    String partida = linha.getString("regiao_compra");
-    int num_partida = linha.getInt("embarcados");
-    String chegada = linha.getString("regiao_chegada");
-    int num_chegada = linha.getInt("desembarcados");
+  for (int i = 1; i < t.getRowCount(); i++) {
+    parou = false;
+    for (int j = 0; j < primeira_vista.getRowCount(); j++) {
+      if (t.getRow(i).getString("regiao_compra").equals(primeira_vista.getRow(j).getString("partida")) && t.getRow(i).getString("regiao_chegada").equals(primeira_vista.getRow(j).getString("chegada"))) {
+        println(i + "  j:  " + j + "   ENTROU!");
+        println(t.getRow(i).getString("regiao_compra") + "     " + primeira_vista.getRow(j).getString("partida"));
+        println(t.getRow(i).getString("regiao_chegada") + "     " + primeira_vista.getRow(j).getString("chegada"));
+        
+        int novoPartida = primeira_vista.getRow(j).getInt("nPartida") + t.getRow(i).getInt("embarcados");
+        int novoChegada = primeira_vista.getRow(j).getInt("nChegada") + t.getRow(i).getInt("desembarcados");
 
-    if (tabela_primeira_vista.getRowCount() == 0) {
-      TableRow novaLinha = tabela_primeira_vista.addRow();
-      novaLinha.setString("partida", partida);
-      novaLinha.setInt("num_partida", num_partida);
-      novaLinha.setString("chegada", chegada);
-      novaLinha.setInt("num_chegada", num_chegada);
-    } else {
-      for (TableRow l : tabela_primeira_vista.rows()) {
-        if (l.getString("partida").equals(partida) && l.getString("chegada").equals(chegada)) {
-          l.setInt("num_partida", l.getInt("num_partida") + num_partida);
-          l.setInt("num_chegada", l.getInt("num_chegada") + num_chegada);
-        } else {
-          TableRow novaLinha = tabela_primeira_vista.addRow();
-          novaLinha.setString("partida", partida);
-          novaLinha.setInt("num_partida", num_partida);
-          novaLinha.setString("chegada", chegada);
-          novaLinha.setInt("num_chegada", num_chegada);
-        }
+        primeira_vista.getRow(j).setInt("nPartida", novoPartida);
+        primeira_vista.getRow(j).setInt("nChegada", novoChegada);
+        //saveTable(primeira_vista, "primeira_vista.csv");
+        parou = true;
+      } else if (j == primeira_vista.getRowCount() - 1 && parou == false) {
+        TableRow novaLinha = primeira_vista.addRow();
+        novaLinha.setString("partida", t.getRow(i).getString("regiao_compra"));
+        novaLinha.setString("chegada", t.getRow(i).getString("regiao_chegada"));
+        novaLinha.setString("nPartida", t.getRow(i).getString("embarcados"));
+        novaLinha.setString("nChegada", t.getRow(i).getString("desembarcados"));
+        //saveTable(primeira_vista, "primeira_vista.csv");
       }
     }
   }
 
-  saveTable(tabela_primeira_vista, "tabela_primeira_vista.csv");
+  saveTable(primeira_vista, "primeira_vista.csv");
 }
