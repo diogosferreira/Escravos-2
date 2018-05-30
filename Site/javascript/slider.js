@@ -34,8 +34,6 @@ $('.slider-range').on('slide', function (event, ui) {
     ano_inicial = $(".slider-range").slider("values", 0);
     ano_final = $(".slider-range").slider("values", 1);
 
-    
-
     //console.log(ano_inicial + " i " + ano_final + "   f");
     
     //map.removeLayer(idLayer);

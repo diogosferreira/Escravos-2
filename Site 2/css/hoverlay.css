@@ -1,0 +1,71 @@
+.container_titulo {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    border-radius: 3px;
+    width: 50%;
+    background-color: red;
+    padding: 7px;
+    font-size: 13px;
+}
+
+
+.container_info_geral {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    border-radius: 3px;
+    width: 30%;
+    background-color: red;
+    padding: 7px;
+    font-size: 13px;
+    text-align: right;
+
+}
+
+.grafico_1 {
+    position: absolute;
+    right: 7px;
+    top: 100px;
+    border-radius: 3px;
+    width: 30%;
+    background-color: #f0f0f0;
+    font-size: 13px;
+    padding: 7px;
+    float: left;
+    border: 1px solid #d9d7d7;
+}
+
+.grafico_1:hover {
+    cursor: pointer;
+}
+
+.grafico_1 h3 {
+    display: inline-block;
+}
+
+.img_seta {
+    float: right;
+    display: inline-block;
+}
+
+.seta_rodada {
+    transform: rotate(180deg);
+}
+
+
+/*————————————————————————————————————————*/
+
+
+.div_grafico_1 {
+    position: absolute;
+    right: 7px;
+    top: 135px;
+    border-radius: 3px;
+    width: 30%;
+    height: 100px;
+    background-color: #cccccc;
+    font-size: 13px;
+    padding: 7px;
+    display: none;
+}

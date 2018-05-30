@@ -33,4 +33,8 @@
 }
 
 
-/*// DIV HOVER*/
+/*// POPUP HOVER*/
+
+.mapboxgl-popup-close-button {
+    display: none;
+}

@@ -2,13 +2,10 @@
 
 var content;
 
-
 var map;
 var teste;
 
-
 var idLayer = 0;
-
 
 var partidaLat = 0;
 var partidaLng = 0;
@@ -61,7 +58,6 @@ $(document).ready(function () {
             var description = e.features[0].properties.description;
 
 
-
             popup = new mapboxgl.Popup({
                     closeOnClick: true
                 })
@@ -81,6 +77,15 @@ $(document).ready(function () {
     });
 
 
+
+
+
+    //TAMANHO DOS PONTOS CONSOANTE O ZOOM
+    map.on('zoom', function () {
+        //zoom = map.getZoom();
+        //console.log(zoom + "   zoom");
+        //desenhaPontos();
+    });
 
     //MAPA
 });
