@@ -40,5 +40,8 @@ $('.slider-range').on('slide', function (event, ui) {
     
     //delete teste;
     
-    desenhaLinhas(ano_inicial);
+    map.removeLayer("linhas");
+    map.removeSource("linhas");
+
+    desenhaLinhas();
 });

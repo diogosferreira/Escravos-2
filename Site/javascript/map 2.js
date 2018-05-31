@@ -48,10 +48,9 @@ $(document).ready(function () {
 
     map.on('load', function () {
 
-        //desenhaLinhas(1566);
+        //desenhaLinhas();
 
-
-
+       
         //map.on('click', 'lines', function (e) {
         map.on('mouseenter', 'lines', function (e) {
             var coordinates = e.features[0].geometry.coordinates.slice();
@@ -97,15 +96,8 @@ $(document).ready(function () {
 
 function desenhaLinhas(anoInicialSlider) {
 
-    if (idLayer > 0) {
-        map.removeLayer(idLayer);
-    }
-
-    idLayer++;
-
-
     teste = {
-        'id': String(idLayer),
+        'id': 'linhas',
         'type': 'line',
         'source': {
             'type': 'geojson',
@@ -120,7 +112,6 @@ function desenhaLinhas(anoInicialSlider) {
             'line-color': ['get', 'color']
         }
     }
-
 
     //viagens.cada.forEach(function (marker, i) {
 
