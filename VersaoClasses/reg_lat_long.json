@@ -1,0 +1,384 @@
+var regiao = {
+    cada:
+
+[
+            {
+                "region": "Amazonia",
+                "lat": 39.8861111,
+                "long": -94.8916667
+  },
+            {
+                "region": "Americas",
+                "lat": 14.370024,
+                "long": -84.804875
+  },
+            {
+                "region": "Antigua",
+                "lat": 17.081256,
+                "long": -61.818097
+  },
+            {
+                "region": "Bahamas",
+                "lat": 24.607769,
+                "long": -78.034602
+  },
+            {
+                "region": "Bahia",
+                "lat": -12.494974,
+                "long": -41.666195
+  },
+            {
+                "region": "Barbados",
+                "lat": 13.16506,
+                "long": -59.559639
+  },
+            {
+                "region": "Bight of Benin",
+                "lat": 5.015241,
+                "long": 2.100554
+  },
+            {
+                "region": "Bight of Biafra and Gulf of Guinea Islands",
+                "lat": 2.833719,
+                "long": 7.999957
+  },
+            {
+                "region": "British Americas",
+                "lat": 18.349625,
+                "long": -64.69134
+  },
+            {
+                "region": "British Guiana",
+                "lat": 5.825372,
+                "long": -58.422707
+  },
+            {
+                "region": "British Honduras",
+                "lat": 14.79035,
+                "long": -87.047016
+  },
+            {
+                "region": "Connecticut",
+                "lat": 41.628232,
+                "long": -72.699599
+  },
+            {
+                "region": "Cuba",
+                "lat": 21.612584,
+                "long": -79.005264
+  },
+            {
+                "region": "Dominica",
+                "lat": 15.432948,
+                "long": -61.344468
+  },
+            {
+                "region": "Dutch Caribbean",
+                "lat": 17.135589,
+                "long": -62.282904
+  },
+            {
+                "region": "Dutch Guianas",
+                "lat": 4.797364,
+                "long": -59.109767
+  },
+            {
+                "region": "England",
+                "lat": 52.513157,
+                "long": -1.494456
+  },
+            {
+                "region": "Florida",
+                "lat": 27.697244,
+                "long": -81.749319
+  },
+            {
+                "region": "France",
+                "lat": 46.71202,
+                "long": 2.333327
+  },
+            {
+                "region": "French Guiana",
+                "lat": 4.608228,
+                "long": -52.816945
+  },
+            {
+                "region": "Georgia",
+                "lat": 42.144238,
+                "long": 43.323143
+  },
+            {
+                "region": "Gold Coast",
+                "lat": 3.715699,
+                "long": 3.746597
+  },
+            {
+                "region": "Grenada",
+                "lat": 12.120576,
+                "long": -61.690685
+  },
+            {
+                "region": "Guadaloupe",
+                "lat": 16.229894,
+                "long": -61.574241
+  },
+            {
+                "region": "Gulf coast",
+                "lat": 25.632988,
+                "long": -90.181245
+  },
+            {
+                "region": "Honduras",
+                "lat": 14.79035,
+                "long": -87.134906
+  },
+            {
+                "region": "Jamaica",
+                "lat": 18.157671,
+                "long": -77.317462
+  },
+            {
+                "region": "Martinique",
+                "lat": 14.681213,
+                "long": -61.004171
+  },
+            {
+                "region": "Maryland",
+                "lat": 39.565996,
+                "long": -77.149431
+  },
+            {
+                "region": "Massachusetts",
+                "lat": 42.506545,
+                "long": -71.844993
+  },
+            {
+                "region": "Montserrat",
+                "lat": 41.646519,
+                "long": 1.828613
+  },
+            {
+                "region": "Netherlands",
+                "lat": 52.014332,
+                "long": 5.673427
+  },
+            {
+                "region": "Nevis",
+                "lat": 17.160381,
+                "long": -62.579047
+  },
+            {
+                "region": "New Hampshire",
+                "lat": 43.357691,
+                "long": -71.547716
+  },
+            {
+                "region": "New Jersey",
+                "lat": 39.598314,
+                "long": -74.739871
+  },
+            {
+                "region": "New York",
+                "lat": 40.71458,
+                "long": -74.003034
+  },
+            {
+                "region": "North Carolina",
+                "lat": 35.678003,
+                "long": -79.544345
+  },
+            {
+                "region": "Pennsylvania",
+                "lat": 40.83444,
+                "long": -77.916783
+  },
+            {
+                "region": "Pernambuco",
+                "lat": -8.341757,
+                "long": -38.154447
+  },
+            {
+                "region": "Peru",
+                "lat": -10.816584,
+                "long": -75.97809
+  },
+            {
+                "region": "Portugal",
+                "lat": 39.642952,
+                "long": -8.627603
+  },
+            {
+                "region": "Puerto Rico",
+                "lat": 18.210383,
+                "long": -66.585005
+  },
+            {
+                "region": "Rhode Island",
+                "lat": 41.438895,
+                "long": -71.47793
+  },
+            {
+                "region": "Rio de la Plata",
+                "lat": -35.156713,
+                "long": -56.730176
+  },
+            {
+                "region": "Saint-Domingue",
+                "lat": 19.040205,
+                "long": -71.561748
+  },
+            {
+                "region": "Senegambia and offshore Atlantic",
+                "lat": 13.443332,
+                "long": -16.722123
+  },
+            {
+                "region": "Sierra Leone",
+                "lat": 8.561946,
+                "long": -11.871108
+  },
+            {
+                "region": "South Carolina",
+                "lat": 33.770363,
+                "long": -80.612937
+  },
+            {
+                "region": "Spain",
+                "lat": 39.530712,
+                "long": -3.32365
+  },
+            {
+                "region": "St. Barthélemy (Sweden)",
+                "lat": 62.952332,
+                "long": 16.844523
+  },
+            {
+                "region": "St. Kitts",
+                "lat": 17.345233,
+                "long": -62.757217
+  },
+            {
+                "region": "St. Lucia",
+                "lat": 13.844153,
+                "long": -61.002111
+  },
+            {
+                "region": "St. Vincent",
+                "lat": 13.253373,
+                "long": -61.189443
+  },
+            {
+                "region": "Tobago",
+                "lat": 11.237587,
+                "long": -60.699764
+  },
+            {
+                "region": "Tortola",
+                "lat": 18.434415,
+                "long": -64.633086
+  },
+            {
+                "region": "Trinidad",
+                "lat": 10.39035,
+                "long": -61.239038
+  },
+            {
+                "region": "Virginia",
+                "lat": 37.399502,
+                "long": -78.433958
+  },
+            {
+                "region": "West Central Africa and St. Helena",
+                "lat": -15.958343,
+                "long": -5.715561
+  },
+            {
+                "region": "Windward Coast",
+                "lat": 7.096124,
+                "long": -11.053379
+  }
+
+    //NOVOS
+    ,
+            {
+                "region": "Bight of Biafra and Gulf of Guinea islands",
+                "lat": 3.333,
+                "long": 9.333
+  },
+            {
+                "region": "Danish West Indies",
+                "lat": 18.3333,
+                "long": -64.8333
+  },
+            {
+                "region": "Hispaniola",
+                "lat": 19.00187,
+                "long": -71.57240
+  },
+            {
+                "region": "Other Africa",
+                "lat": -16.99727,
+                "long": 14.29368
+  },
+            {
+                "region": "Other Brazil",
+                "lat": -20.43979,
+                "long": -41.90575
+  },
+            {
+                "region": "British West Indies",
+                "lat": 18.09401,
+                "long": -67.89288
+  },
+            {
+                "region": "French West Indies",
+                "lat": 16.73687,
+                "long": -62.18677
+  },
+            {
+                "region": "Other North America",
+                "lat": 50.74178,
+                "long": -61.75729
+  },
+            {
+                "region": "Other Spanish",
+                "lat": 21.34637,
+                "long": -77.69010
+  },
+            {
+                "region": "Spanish Circum-Caribbean",
+                "lat": 21.34637,
+                "long": -77.69010
+  },
+            {
+                "region": "Other Caribbean",
+                "lat": 21.34637,
+                "long": -77.69010
+  },
+            {
+                "region": "Southeast Africa and Indian Ocean islands",
+                "lat": 3.20278,
+                "long": 73.22068
+  },
+            {
+                "region": "Southeast Brazil",
+                "lat": -18.9349365234375,
+                "long": 11.178401873711778
+  },
+            {
+                "region": "Southeast Brazil",
+                "lat": -18.9349365234375,
+                "long": 11.178401873711778
+  },
+            {
+                "region": "Spanish Americas",
+                "lat": 9.33837890625,
+                "long": 3.3379539614164884
+  }
+    
+
+
+
+
+]
+};
