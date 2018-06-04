@@ -16,7 +16,7 @@ class Ponto {
 				'type': 'Feature',
 				'properties': {
                 	'color': '#000000', // blue
-                	'size': 6,
+                	'size': 3,
                 	'id': this.nome,
                 	//"description": city.cidade,
                 	"stroke-color": '#000000',
@@ -34,7 +34,7 @@ class Ponto {
 				'type': 'Feature',
 				'properties': {
                 	'color': '#00ff00', // blue
-                	'size': 6,
+                	'size': 3,
                 	'id': this.nome,
                 	//"description": city.cidade,
                 	"stroke-color": '#000000',
