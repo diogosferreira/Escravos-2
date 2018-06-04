@@ -54,7 +54,7 @@ $(document).ready(function () {
 
     map.on('load', function () {
 
-        //desenhaLinhas(1566);
+        desenhaVista1();
 
 
 

@@ -15,12 +15,12 @@ class Ponto {
 				'id': 'ponto',
 				'type': 'Feature',
 				'properties': {
-                	'color': '#000000', // blue
-                	'size': 3,
+                	'color': '#ffffff', // blue
+                	'size': 5,
                 	'id': this.nome,
                 	//"description": city.cidade,
                 	"stroke-color": '#000000',
-                	"stroke-size": 0
+                	"stroke-size": 1
                 },
                 'geometry': {
                 	'type': 'Point',
@@ -33,12 +33,12 @@ class Ponto {
 				'id': 'ponto',
 				'type': 'Feature',
 				'properties': {
-                	'color': '#00ff00', // blue
-                	'size': 3,
+                	'color': '#ffc200', // blue
+                	'size': 5,
                 	'id': this.nome,
                 	//"description": city.cidade,
                 	"stroke-color": '#000000',
-                	"stroke-size": 0
+                	"stroke-size": 1
                 },
                 'geometry': {
                 	'type': 'Point',
