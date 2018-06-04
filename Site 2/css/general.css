@@ -35,4 +35,9 @@ a {
 
 .info_geral span {
     font-size: 16px;
+    font-family: "proxima_bold", sans-serif;
+}
+
+.container_titulo h3 {
+    font-family: "proxima_bold", sans-serif;
 }

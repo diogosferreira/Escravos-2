@@ -15,9 +15,11 @@ class Ponto {
 				'id': 'ponto',
 				'type': 'Feature',
 				'properties': {
-                	'color': '#ffffff', // blue
+                	'color': '#ffffff',
                 	'size': 5,
                 	'id': this.nome,
+                    'viagens': this.viagens,
+                    'emb': this.embarcados,
                 	//"description": city.cidade,
                 	"stroke-color": '#000000',
                 	"stroke-size": 1
@@ -33,10 +35,11 @@ class Ponto {
 				'id': 'ponto',
 				'type': 'Feature',
 				'properties': {
-                	'color': '#ffc200', // blue
+                	'color': '#ffc200',
                 	'size': 5,
                 	'id': this.nome,
-                	//"description": city.cidade,
+                    'viagens': this.viagens,
+                    'des': this.desembarcados,
                 	"stroke-color": '#000000',
                 	"stroke-size": 1
                 },

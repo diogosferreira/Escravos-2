@@ -56,31 +56,66 @@ $(document).ready(function () {
 
         desenhaVista1();
 
-
-
-        //map.on('click', 'lines', function (e) {
-        map.on('mouseenter', 'lines', function (e) {
-            var coordinates = e.features[0].geometry.coordinates.slice();
-            var description = e.features[0].properties.description;
-
-
-            popup = new mapboxgl.Popup({
-                    closeOnClick: true
-                })
-                .setLngLat(e.lngLat)
-                .setHTML('<h1>Viagem</h1>')
-                .addTo(map);
-        });
-
-
-
-        map.on('mouseleave', 'lines', function () {
-            map.getCanvas().style.cursor = '';
-            popup.remove();
-        });
-
-        //For each
     });
+
+
+
+
+    //—————————————————————————————————————————————————-HOVER
+    //—————————————————————————————————————————————————-HOVER
+    //—————————————————————————————————————————————————-HOVER
+
+
+    //map.on('click', 'lines', function (e) {
+    map.on('mouseenter', 'pontoTeste', function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+
+
+
+        console.log("vai");
+
+
+
+        popup = new mapboxgl.Popup({
+                closeOnClick: true
+            })
+            .setLngLat(e.lngLat)
+            .setHTML('<h3>' + e.features[0].properties.id + '</h3><p> <b>Número de Viagens: </b> ' + e.features[0].properties.viagens + '</p>' + '</h3><p> <b>Número de embarcados: </b> ' + e.features[0].properties.emb + '</p>')
+            .addTo(map);
+    });
+
+
+    map.on('mouseleave', 'pontoTeste', function () {
+        map.getCanvas().style.cursor = '';
+        popup.remove();
+    });
+
+
+
+    //—————————————————————————————————————————————————-HOVER
+    //—————————————————————————————————————————————————-HOVER
+    //—————————————————————————————————————————————————-HOVER
+
+    //map.on('click', 'lines', function (e) {
+    map.on('mouseenter', 'linhaLinha', function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+
+
+        popup = new mapboxgl.Popup({
+                closeOnClick: true
+            })
+            .setLngLat(e.lngLat)
+            .setHTML('<h3>' + e.features[0].properties.id + '</h3><p> <b>Número de Viagens: </b> ' + e.features[0].properties.viagens + '</p>' + '</h3><p> <b>Número de embarcados: </b> ' + e.features[0].properties.emb + '</p>')
+            .addTo(map);
+    });
+
+
+
+    map.on('mouseleave', 'linhaLinha', function () {
+        map.getCanvas().style.cursor = '';
+        popup.remove();
+    });
+
 
 
 
@@ -135,14 +170,15 @@ function desenhaVista2() {
 function preparaLayerLinhas() {
 
     if (idLayer > 0) {
-        map.removeLayer(idLayer);
+        map.removeLayer("linhaLinha");
+        map.removeSource("linhaLinha");
     }
 
     idLayer++;
 
 
     teste = {
-        'id': String(idLayer),
+        'id': "linhaLinha",
         'type': 'line',
         'source': {
             'type': 'geojson',
@@ -162,13 +198,14 @@ function preparaLayerLinhas() {
 function preparaLayerPontos() {
 
     if (idLayer1 > 5000) {
-        map.removeLayer(idLayer1);
+        map.removeLayer("pontoTeste");
+        map.removeSource("pontoTeste");
     }
 
     idLayer1++;
 
     pontos = {
-        'id': String(idLayer1),
+        'id': 'pontoTeste',
         'type': 'circle',
         'source': {
             'type': 'geojson',
@@ -226,8 +263,8 @@ function linhasMapVista2() {
                 while (!entrou) {
                     if (pPartida[0] == linhasHM.get(j).pPartida[0] && pPartida[1] == linhasHM.get(j).pPartida[1] && pChegada[0] == linhasHM.get(j).pChegada[0] && pChegada[1] == linhasHM.get(j).pChegada[1]) {
                         linhasHM.get(j).ocurrencias += 1;
-                        linhasHM.get(j).embarcados += viagensHM.get(i).embarcados;
-                        linhasHM.get(j).desembarcados += viagensHM.get(i).desembarcados;
+                        linhasHM.get(j).embarcados += parseInt(viagensHM.get(i).embarcados);
+                        linhasHM.get(j).desembarcados += parseInt(viagensHM.get(i).desembarcados);
                         linhasHM.get(j).actualiza();
                         entrou = true;
                         break;
@@ -255,7 +292,7 @@ function pontosPartidaVista2() {
 
         var pPartida = [viagensHM.get(i).longPartida, viagensHM.get(i).latPartida];
 
-        var emb = viagensHM.get(i).embarcados;
+        var emb = parseInt(viagensHM.get(i).embarcados);
 
         if (viagensHM.get(i).ano >= ano_inicial && viagensHM.get(i).ano <= ano_final) {
 
@@ -292,7 +329,7 @@ function pontosChegadaVista2() {
 
         var pChegada = [viagensHM.get(i).longChegada, viagensHM.get(i).latChegada];
 
-        var des = viagensHM.get(i).desembarcados;
+        var des = parseInt(viagensHM.get(i).desembarcados);
 
         if (viagensHM.get(i).ano >= ano_inicial && viagensHM.get(i).ano <= ano_final) {
 
@@ -319,6 +356,6 @@ function pontosChegadaVista2() {
     }
 }
 
-function map_processing (num, in_min, in_max, out_min, out_max) {
-  return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+function map_processing(num, in_min, in_max, out_min, out_max) {
+    return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
