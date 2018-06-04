@@ -33,7 +33,7 @@ noUiSlider.create(slider, {
 slider.noUiSlider.on('slide', function (values) {
     ano_inicial = slider.noUiSlider.get()[0];
     ano_final = slider.noUiSlider.get()[1];
-
+    
 
     
     switch (vista) {

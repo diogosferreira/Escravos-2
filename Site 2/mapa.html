@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/nouislider.min.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-    <!--<link rel="stylesheet" href="css/loading.css">-->
+    <link rel="stylesheet" href="css/loading.css">
 
     <!--MAPBOX STYLE-->
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.css' rel='stylesheet' />
@@ -56,24 +56,28 @@
             <br>-->
             <div class="slider_container">
                 <!--<div class="slider-range"></div>-->
-                
+
                 <div id="sliderEspetacular" class="noUi-target noUi-ltr noUi-horizontal"></div>
             </div>
         </div>
-        
-        
-        
+
+
+
     </div>
-    
-    
-    
+
+
+    <!--LOADING-->
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
 
 
 
     <!--TITULO-->
     <div class="container_titulo">
         <div class="titulo">
-            <h3>Tráfico escravos transatlânticos 1566—1866</h3>
+            <h3>Tráfico de escravos transatlânticos 1566—1866</h3>
         </div>
     </div>
 
@@ -90,39 +94,33 @@
 
     <!--GRAFICO 1-->
     <div class="grafico_1">
-        <h3>Escravos traficados</h3>
-        <div class="img_seta">
-            <img src="icons/chevron.svg" class="seta" height="18" width="18">
-        </div>
+        <h3>Percentagem de mortos por ano</h3>
     </div>
 
 
     <div class="div_grafico_1">
-        <canvas id="myChart" width="200" height="200"></canvas>
+        <canvas id="myChart" width="10" height="10"></canvas>
     </div>
-    
-    
 
-    
+
+
+
     <!--GRAFICO 2-->
     <div class="grafico_2">
-        <h3>Escravos traficados</h3>
-        <div class="img_seta2">
-            <img src="icons/chevron.svg" class="seta2" height="18" width="18">
-        </div>
+        <h3>Percentagem de mortos por ano</h3>
     </div>
 
 
     <div class="div_grafico_2">
         <canvas id="myChart2" width="200" height="200"></canvas>
     </div>
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     <!--LEGENDA-->
     <div class="legenda">
         <h3> LEGENDA </h3>
@@ -172,7 +170,7 @@
 <!--CHART-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
 <!--<script src="javascript/map.js"></script>-->
-<!--<script src="javascript/load.js"></script>-->
+<script src="javascript/load.js"></script>
 
 
 </html>

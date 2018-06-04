@@ -1,41 +1,99 @@
 $(document).ready(function () {
 
-    //RODAR SETA GRAFICO 1
-    $('.grafico_1').click(function () {
-        $(".seta").toggleClass("seta_rodada");
 
-        $(".div_grafico_1").toggle();
-        desenhaGrafico1();
 
+    desenhaMortes();
+
+
+
+
+    slider.noUiSlider.on('slide', function (values) {
+        ano_inicial = slider.noUiSlider.get()[0];
+        ano_final = slider.noUiSlider.get()[1];
+
+        desenhaMortes();
     });
-    
-    
-    //RODAR SETA GRAFICO 1
-    $('.grafico_2').click(function () {
-        $(".seta2").toggleClass("seta_rodada");
-
-        $(".div_grafico_2").toggle();
-        desenhaGrafico1();
-
-    });
-    
-    
-
-    // $(".div_grafico_1").show();
 
 
 
 
 
 
+    function desenhaMortes() {
+
+        //GRAFICO 1
+
+        var labelsAnos = [];
+        var percentagemMortes = [];
+        var incremento = 0;
+
+
+        var soma = 0;
+
+        var soma1 = 0;
+
+        console.log(percentagemMortes);
+
+        for (var i = 1566; i <= 1866; i++) {
+            incremento = 1;
+
+            if (i >= ano_inicial && i <= ano_final) {
+                labelsAnos.push(i - 1 + incremento);
+                soma++;
+
+            }
+        }
 
 
 
-    //GRAFICO 1
-    function desenhaGrafico1() {
+        console.log(soma + "    labelsAnos ");
+
+
+        //PERCENTAGEM
+        var totalEmb = 0;
+        var totalDes = 0;
+        var percentagemMortesNum = 0;
+
+        for (var i = 1566; i <= 1866; i++) {
+
+            if (i >= ano_inicial && i <= ano_final) {
+
+                for (var k = 0; k < viagensHM.size; k++) {
+
+                    if (viagensHM.get(k).ano == i) {
+                        totalEmb += viagensHM.get(k).embarcados;
+                        totalDes += viagensHM.get(k).desembarcados;
+                    }
+                }
+                soma1++;
+
+
+                percentagemMortesNum = parseInt(100 - ((totalDes * 100) / totalEmb));
+                percentagemMortes.push(percentagemMortesNum);
+                totalEmb = 0;
+                totalDes = 0;
+            }
+
+        }
+
+
+
+
+        console.log(soma1 + "    valores ");
+        //console.log(percentagemMortes);
+
+
+
+
+
+
+
+
 
         var ctx = document.getElementById("myChart").getContext('2d');
         Chart.defaults.line.spanGaps = true;
+
+
 
 
         var myColors = ['red', 'green', 'blue'];
@@ -48,28 +106,34 @@ $(document).ready(function () {
             labels: visitData,
             data: {
                 datasets: [{
-                        label: 'Portugal',
-                        data: [10, 20, 30, 40],
+                        label: 'Mortes',
+                        data: percentagemMortes,
                         fill: false,
                         borderColor: "#00ff00",
                         labelString: "CENAS"
-            },
-                    {
-                        label: 'Espanha',
-                        data: [30, 40, 20, 10],
-                        fill: false,
-                        borderColor: "#ffff00",
-                        labelString: "CENAS"
             }
+                /*,
+                                {
+                                    label: 'Espanha',
+                                    data: [30, 40, 20, 10],
+                                    fill: false,
+                                    borderColor: "#ffff00",
+                                    labelString: "CENAS"
+                            }*/
 
             ],
 
-                labels: ['1566', '1666', '1766', '1866']
+                labels: labelsAnos
             },
 
 
 
             options: {
+                animation: false,
+                tooltips: {
+                    //enabled: false,
+                    mode: 'single'
+                },
                 scales: {
                     xAxes: [{
                         ticks: {
@@ -88,10 +152,28 @@ $(document).ready(function () {
                         usePointStyle: true,
                     }
                 },
+                showTooltips: false
             }
         });
 
-    }
+
+
+        Chart.Tooltip.positioners.custom = function (elements, eventPosition) {
+            /** @type {Chart.Tooltip} */
+            var tooltip = this;
+
+            /* ... */
+
+            return {
+                x: 0,
+                y: 0
+            };
+        }
+
+
+
+
+    };
 
 
 });

@@ -9,7 +9,7 @@
     width: calc(100% + 0px);
     height: 60px;
 
-
+display: none;
     z-index: 10;
     position: absolute;
     left: 0px;
