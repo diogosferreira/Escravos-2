@@ -37,7 +37,7 @@ $(document).ready(function () {
     map = new mapboxgl.Map({
         container: 'map',
         //style: 'mapbox://styles/diogoferreira37/cjaoaqxke2sj32rrvbeyzffl2',
-        style: 'mapbox://styles/mapbox/light-v9',
+        style: 'mapbox://styles/diogoferreira37/cji0nqkjb3p312rn4s0k4sq3v',
         center: [-7.3828125, 12.382928338487396],
         zoom: 1.5,
         maxZoom: 7,
@@ -88,9 +88,17 @@ $(document).ready(function () {
 
     //TAMANHO DOS PONTOS CONSOANTE O ZOOM
     map.on('zoom', function () {
-        // zoom = map.getZoom();
-        // console.log(zoom + "   zoom");
-        // desenhaPontos();
+        zoom = map.getZoom();
+        console.log(zoom + "   zoom");
+
+        if (zoom < 2.5) {
+            vista = 1;
+            desenhaVista1();
+        } else {
+            vista = 2;
+            desenhaVista2();
+        }
+
     });
 
     //MAPA

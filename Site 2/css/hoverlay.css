@@ -3,10 +3,10 @@
     left: 7px;
     top: 7px;
     border-radius: 3px;
-    width: 50%;
-    background-color: red;
+    background-color: #343434;
     padding: 7px;
     font-size: 13px;
+    display: inline-block;
 }
 
 
@@ -28,9 +28,9 @@
 .grafico_1 {
     position: absolute;
     right: 7px;
-    top: 100px;
-    border-radius: 3px;
-    width: 30%;
+    top: 80px;
+    border-radius: 3px 3px 0px 0px;
+    width: 250px;
     background-color: #f0f0f0;
     font-size: 13px;
     padding: 7px;
@@ -60,14 +60,13 @@
 .div_grafico_1 {
     position: absolute;
     right: 7px;
-    top: 137px;
-    border-radius: 3px;
+    top: 111px;
+    border-radius: 0px 0px 3px 3px;
     width: 250px;
-    height: 250px;
+    height:250px;
     background-color: white;
     font-size: 13px;
     padding: 7px;
-    display: none;
 }
 
 
@@ -76,9 +75,9 @@
 .grafico_2 {
     position: absolute;
     right: 7px;
-    top: 200px;
-    border-radius: 3px;
-    width: 30%;
+    top: 370px;
+    border-radius: 3px 3px 0px 0px;
+    width:250px;
     background-color: #f0f0f0;
     font-size: 13px;
     padding: 7px;
@@ -106,14 +105,13 @@
 .div_grafico_2 {
     position: absolute;
     right: 7px;
-    top: 237px;
-    border-radius: 3px;
+    top: 401px;
+    border-radius: 0px 0px 3px 3px;
     width: 250px;
-    height: 250px;
+    height: 200px;
     background-color: white;
     font-size: 13px;
     padding: 7px;
-    display: none;
 }
 
 
