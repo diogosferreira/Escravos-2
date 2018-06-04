@@ -6,6 +6,7 @@ var map;
 var teste;
 
 var idLayer = 0;
+var idLayer1 = 5000;
 
 var ate = 0;
 
@@ -95,7 +96,8 @@ $(document).ready(function () {
 
 function desenhaVista2() {
 
-    preparaLayer();
+    preparaLayerLinhas();
+    preparaLayerPontos();
 
     linhasHM.clear();
     linhasMapVista2();
@@ -103,19 +105,25 @@ function desenhaVista2() {
     pontosChegadaHM.clear();
     pontosPartidaVista2();
     pontosChegadaVista2();
-
-    console.log(pontosPartidaHM);
-    console.log(pontosChegadaHM);
     
     for (var i = 0; i < linhasHM.size; i++) {
         teste.source.data.features.push(linhasHM.get(i).linha);
     }
 
+    for (var i = 0; i < pontosChegadaHM.size; i++) {
+        pontos.source.data.features.push(pontosChegadaHM.get(i).ponto);
+    }
+
+    for (var i = 0; i < pontosPartidaHM.size; i++) {
+        pontos.source.data.features.push(pontosPartidaHM.get(i).ponto);
+    }
+
     map.addLayer(teste);
+    map.addLayer(pontos);
 
 }
 
-function preparaLayer(){
+function preparaLayerLinhas(){
 
     if (idLayer > 0) {
         map.removeLayer(idLayer);
@@ -139,8 +147,34 @@ function preparaLayer(){
             'line-opacity': ['get', 'line-opacity'],
             'line-color': ['get', 'color']
         }
+    }  
+}
+
+function preparaLayerPontos(){
+
+    if (idLayer1 > 5000) {
+        map.removeLayer(idLayer1);
     }
-    
+
+    idLayer1++;
+
+    pontos = {
+        'id': String(idLayer1),
+        'type': 'circle',
+        'source': {
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': []
+            }
+        },
+        'paint': {
+            'circle-radius': ['get', 'size'],
+            'circle-stroke-color': ['get', 'stroke-color'],
+            'circle-stroke-width': ['get', 'stroke-size'],
+            'circle-color': ['get', 'color']
+        }
+    }
 }
 
 function preencheViagensMap(){
@@ -224,14 +258,14 @@ function pontosPartidaVista2(){
                         break;
                     }
                     if(j == pontosPartidaHM.size - 1 && !entrou){
-                        pontosPartidaHM.set(pontosPartidaHM.size, new Ponto(pontosPartidaHM.size, rPartida, pPartida, emb, 0));
+                        pontosPartidaHM.set(pontosPartidaHM.size, new Ponto("partida", rPartida, pPartida, emb, 0));
                         entrou = true;
                         break;
                     }
                     j++;
                 }
             } else {
-                pontosPartidaHM.set(0, new Ponto(0, rPartida, pPartida, emb, 0));
+                pontosPartidaHM.set(0, new Ponto("partida", rPartida, pPartida, emb, 0));
             }
 
         }
@@ -261,14 +295,14 @@ function pontosChegadaVista2(){
                         break;
                     }
                     if(j == pontosChegadaHM.size - 1 && !entrou){
-                        pontosChegadaHM.set(pontosChegadaHM.size, new Ponto(pontosChegadaHM.size, rChegada, pChegada, 0, des));
+                        pontosChegadaHM.set(pontosChegadaHM.size, new Ponto("chegada", rChegada, pChegada, 0, des));
                         entrou = true;
                         break;
                     }
                     j++;
                 }
             } else {
-                pontosChegadaHM.set(0, new Ponto(0, rChegada, pChegada, 0, des));
+                pontosChegadaHM.set(0, new Ponto("chegada", rChegada, pChegada, 0, des));
             }
         }
     }
