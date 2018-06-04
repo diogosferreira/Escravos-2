@@ -110,7 +110,6 @@ $(document).ready(function () {
     });
 
 
-
     map.on('mouseleave', 'linhaLinha', function () {
         map.getCanvas().style.cursor = '';
         popup.remove();
