@@ -12,10 +12,12 @@ var ate = 0;
 
 const viagensHM = new Map();
 const linhasHM = new Map();
+const linhasChegadaHM = new Map();
+const linhasPartidaHM = new Map();
 const pontosPartidaHM = new Map();
 const pontosChegadaHM = new Map();
 
-var vista = 2;
+var vista = 1;
 
 preencheViagensMap();
 adicionaLatLongViagensMap();
@@ -217,19 +219,21 @@ function linhasMapVista2() {
                 while (!entrou) {
                     if (pPartida[0] == linhasHM.get(j).pPartida[0] && pPartida[1] == linhasHM.get(j).pPartida[1] && pChegada[0] == linhasHM.get(j).pChegada[0] && pChegada[1] == linhasHM.get(j).pChegada[1]) {
                         linhasHM.get(j).ocurrencias += 1;
+                        linhasHM.get(j).embarcados += viagensHM.get(i).embarcados;
+                        linhasHM.get(j).desembarcados += viagensHM.get(i).desembarcados;
                         linhasHM.get(j).actualiza();
                         entrou = true;
                         break;
                     }
                     if (j == linhasHM.size - 1 && !entrou) {
-                        linhasHM.set(linhasHM.size, new Linha(linhasHM.size, pPartida, pChegada));
+                        linhasHM.set(linhasHM.size, new Linha(linhasHM.size, pPartida, pChegada, viagensHM.get(i).embarcados, viagensHM.get(i).desembarcados));
                         entrou = true;
                         break;
                     }
                     j++;
                 }
             } else {
-                linhasHM.set(0, new Linha(0, pPartida, pChegada));
+                linhasHM.set(0, new Linha(0, pPartida, pChegada, viagensHM.get(i).embarcados, viagensHM.get(i).desembarcados));
             }
         }
     }
@@ -306,4 +310,8 @@ function pontosChegadaVista2() {
             }
         }
     }
+}
+
+function map_processing (num, in_min, in_max, out_min, out_max) {
+  return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
