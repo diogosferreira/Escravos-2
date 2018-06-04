@@ -23,6 +23,8 @@
 
 }
 
+/*————————————————————————————————————————*/
+
 .grafico_1 {
     position: absolute;
     right: 7px;
@@ -54,18 +56,79 @@
 }
 
 
-/*————————————————————————————————————————*/
-
 
 .div_grafico_1 {
     position: absolute;
     right: 7px;
-    top: 135px;
+    top: 137px;
     border-radius: 3px;
-    width: 30%;
-    height: 100px;
-    background-color: #cccccc;
+    width: 250px;
+    height: 250px;
+    background-color: white;
     font-size: 13px;
     padding: 7px;
     display: none;
+}
+
+
+/*————————————————————————————————————————*/
+
+.grafico_2 {
+    position: absolute;
+    right: 7px;
+    top: 200px;
+    border-radius: 3px;
+    width: 30%;
+    background-color: #f0f0f0;
+    font-size: 13px;
+    padding: 7px;
+    float: left;
+    border: 1px solid #d9d7d7;
+}
+
+.grafico_2:hover {
+    cursor: pointer;
+}
+
+.grafico_2 h3 {
+    display: inline-block;
+}
+
+.img_seta2 {
+    float: right;
+    display: inline-block;
+}
+
+.seta_rodada2 {
+    transform: rotate(180deg);
+}
+
+.div_grafico_2 {
+    position: absolute;
+    right: 7px;
+    top: 237px;
+    border-radius: 3px;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    font-size: 13px;
+    padding: 7px;
+    display: none;
+}
+
+
+
+
+/*LEGENDA*/
+
+.legenda {
+    position: absolute;
+    left: 0px;
+    bottom: 70px;
+    width: 100%;
+    font-size: 13px;
+    padding: 3px;
+    padding-left: 15px;
+    float: left;
+    background: pink;
 }

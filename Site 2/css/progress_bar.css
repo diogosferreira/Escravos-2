@@ -7,7 +7,7 @@
     padding-left: 20px;
     padding-right: 20px;
     width: calc(100% + 0px);
-    height: 80px;
+    height: 70px;
 
 
     z-index: 10;
@@ -232,16 +232,17 @@ input[type=range]:focus::-ms-fill-upper {
 
 
 /*AFTER COM ANOS*/
+
 body > div.slider-temporal > div > div > div > span:nth-child(2)::after {
     content: " 1566";
     position: absolute;
-    left:-8px;
-    top:-14px;
+    left: -8px;
+    top: -14px;
     font-size: 13px;
 }
 
 body > div.slider-temporal > div > div > div > span:nth-child(2):active {
-    color:black;
+    color: black;
 }
 
 

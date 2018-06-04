@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title> VI</title>
-    <meta name="description" content="Locais de interesse para designer">
+    <meta name="description" content="Escravos">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -81,16 +81,42 @@
 
     <!--GRAFICO 1-->
     <div class="grafico_1">
-        <h3>Escravos transacionados</h3>
+        <h3>Escravos traficados</h3>
         <div class="img_seta">
             <img src="icons/chevron.svg" class="seta" height="18" width="18">
         </div>
     </div>
-    
+
 
     <div class="div_grafico_1">
+        <canvas id="myChart" width="200" height="200"></canvas>
+    </div>
+    
+    
+
+    
+    <!--GRAFICO 2-->
+    <div class="grafico_2">
+        <h3>Escravos traficados</h3>
+        <div class="img_seta2">
+            <img src="icons/chevron.svg" class="seta2" height="18" width="18">
+        </div>
+    </div>
 
 
+    <div class="div_grafico_2">
+        <canvas id="myChart2" width="200" height="200"></canvas>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <!--LEGENDA-->
+    <div class="legenda">
+        <h3> LEGENDA </h3>
     </div>
 
 
@@ -131,6 +157,10 @@
 
 <!--<script src="javascript/dados_vista1.js"></script>-->
 <script src="javascript/vista1.js"></script>
+
+
+<!--CHART-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
 <!--<script src="javascript/map.js"></script>-->
 <!--<script src="javascript/load.js"></script>-->
 
