@@ -64,4 +64,14 @@ $(document).ready(function () {
 
     var cenas = "121211";
 
+<<<<<<< HEAD
+=======
+    //console.log(ano_inicial + " i " + ano_final + "   f");
+    
+    //map.removeLayer(idLayer);
+    
+    //delete teste;
+    
+    desenhaLinhas();
+>>>>>>> 78523226cf72b4b834c34baa99497fd36ffd570b
 });

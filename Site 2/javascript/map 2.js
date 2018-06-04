@@ -8,6 +8,7 @@ var teste;
 var idLayer = 0;
 
 var ate = 0;
+<<<<<<< HEAD
 
 const viagensHM = new Map();
 const linhasHM = new Map();
@@ -16,6 +17,12 @@ const pontosChegadaHM = new Map();
 
 var vista = 2;
 
+=======
+
+const viagensHM = new Map();
+const linhasHM = new Map();
+
+>>>>>>> 78523226cf72b4b834c34baa99497fd36ffd570b
 preencheViagensMap();
 adicionaLatLongViagensMap();
 
@@ -115,7 +122,11 @@ function desenhaVista2() {
 
 }
 
+<<<<<<< HEAD
 function preparaLayer(){
+=======
+function desenhaLinhas() {
+>>>>>>> 78523226cf72b4b834c34baa99497fd36ffd570b
 
     if (idLayer > 0) {
         map.removeLayer(idLayer);
@@ -143,6 +154,7 @@ function preparaLayer(){
     
 }
 
+<<<<<<< HEAD
 function preencheViagensMap(){
     for (var i = 0; i < trips.cada.length; i++) {
         var id = parseInt(trips.cada[i].id);
@@ -156,6 +168,32 @@ function preencheViagensMap(){
     }
 }
 
+=======
+    linhasHM.clear();
+    linhasMap();
+
+    for (var i = 0; i < linhasHM.size; i++) {
+        teste.source.data.features.push(linhasHM.get(i).linha);
+   }
+
+   map.addLayer(teste);
+
+}
+
+function preencheViagensMap(){
+    for (var i = 0; i < trips.cada.length; i++) {
+        var id = parseInt(trips.cada[i].id);
+        var a = parseInt(trips.cada[i].ano.substr(0, trips.cada[i].ano.indexOf('-')));
+        var rP = trips.cada[i].regiao_compra;
+        var rC = trips.cada[i].regiao_chegada;
+        var e = parseInt(trips.cada[i].embarcados);
+        var d = parseInt(trips.cada[i].desembarcados);
+        
+        viagensHM.set(i, new Viagem(id, a, rP, rC, e, d));
+    }
+}
+
+>>>>>>> 78523226cf72b4b834c34baa99497fd36ffd570b
 function adicionaLatLongViagensMap(){
     for (var i = 0; i < regiao.cada.length; i++) {
         for (var j = 0; j < viagensHM.size; j++) {
@@ -168,6 +206,7 @@ function adicionaLatLongViagensMap(){
                 viagensHM.get(j).longChegada = regiao.cada[i].long;
                 viagensHM.get(j).latChegada = regiao.cada[i].lat;
             }
+<<<<<<< HEAD
         }
     }
 }
@@ -197,10 +236,13 @@ function linhasMapVista2(){
             } else {
                 linhasHM.set(0, new Linha(0, pPartida, pChegada));
             }
+=======
+>>>>>>> 78523226cf72b4b834c34baa99497fd36ffd570b
         }
     }
 }
 
+<<<<<<< HEAD
 function pontosPartidaVista2(){
     for (var i = 0; i < viagensHM.size; i++) {
 
@@ -225,19 +267,44 @@ function pontosPartidaVista2(){
                     }
                     if(j == pontosPartidaHM.size - 1 && !entrou){
                         pontosPartidaHM.set(pontosPartidaHM.size, new Ponto(pontosPartidaHM.size, rPartida, pPartida, emb, 0));
+=======
+function linhasMap(){
+    for (var i = 0; i < viagensHM.size; i++) {
+        var entrou = false;
+        var pPartida = [viagensHM.get(i).longPartida, viagensHM.get(i).latPartida];
+        var pChegada = [viagensHM.get(i).longChegada, viagensHM.get(i).latChegada];
+        if (viagensHM.get(i).ano >= ano_inicial && viagensHM.get(i).ano <= ano_final) {
+            if(linhasHM.size > 0){
+                var j = 0;
+                while(!entrou){
+                    if (pPartida[0] == linhasHM.get(j).pPartida[0] && pPartida[1] == linhasHM.get(j).pPartida[1] && pChegada[0] == linhasHM.get(j).pChegada[0] && pChegada[1] == linhasHM.get(j).pChegada[1]){
+                        linhasHM.get(j).ocurrencias += 1;
+                        linhasHM.get(j).actualiza();
+                        entrou = true;
+                        break;
+                    }
+                    if(j == linhasHM.size - 1 && !entrou){
+                        linhasHM.set(linhasHM.size, new Linha(linhasHM.size, pPartida, pChegada));
+>>>>>>> 78523226cf72b4b834c34baa99497fd36ffd570b
                         entrou = true;
                         break;
                     }
                     j++;
                 }
             } else {
+<<<<<<< HEAD
                 pontosPartidaHM.set(0, new Ponto(0, rPartida, pPartida, emb, 0));
             }
 
+=======
+                linhasHM.set(0, new Linha(0, pPartida, pChegada));
+            }
+>>>>>>> 78523226cf72b4b834c34baa99497fd36ffd570b
         }
     }
 }
 
+<<<<<<< HEAD
 function pontosChegadaVista2(){
     for (var i = 0; i < viagensHM.size; i++) {
 
@@ -273,3 +340,6 @@ function pontosChegadaVista2(){
         }
     }
 }
+=======
+
+>>>>>>> 78523226cf72b4b834c34baa99497fd36ffd570b
