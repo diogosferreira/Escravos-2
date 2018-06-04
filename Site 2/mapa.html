@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/mapa.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/hoverlay.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     <!--<link rel="stylesheet" href="css/loading.css">-->
@@ -48,16 +49,24 @@
     <!--————————————————-->
     <div class="slider-temporal">
         <div class="containertempo">
-            <p>
+            <!--<p>
                 <label for="amount">Intervalo de tempo —  </label>
                 <input type="text" id="amount-anos" readonly style="border:0; color:#00ff00; font-weight:bold;">
             </p>
-            <br>
+            <br>-->
             <div class="slider_container">
-                <div class="slider-range"></div>
+                <!--<div class="slider-range"></div>-->
+                
+                <div id="sliderEspetacular" class="noUi-target noUi-ltr noUi-horizontal"></div>
             </div>
         </div>
+        
+        
+        
     </div>
+    
+    
+    
 
 
 
@@ -140,6 +149,7 @@
 <script type="text/javascript" src="viagens.json"></script>
 <script type="text/javascript" src="reg_lat_long.json"></script>
 <script type="text/javascript" src="data.json"></script>
+<script type="text/javascript" src="javascript/nouislider.min.js"></script>
 
 
 <script src="javascript/dados.js"></script>
