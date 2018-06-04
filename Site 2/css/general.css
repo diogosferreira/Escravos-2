@@ -28,3 +28,11 @@ a {
 #map > div.mapboxgl-control-container > div.mapboxgl-ctrl-bottom-left {
     display: none;
 }
+
+
+
+
+
+.info_geral span {
+    font-size: 16px;
+}

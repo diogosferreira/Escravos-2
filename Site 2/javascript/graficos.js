@@ -106,11 +106,13 @@ $(document).ready(function () {
             labels: visitData,
             data: {
                 datasets: [{
-                        label: 'Mortes',
+                        label: '% de Mortes por ano',
+                        pointStyle: 'line',
                         data: percentagemMortes,
                         fill: false,
-                        borderColor: "#00ff00",
-                        labelString: "CENAS"
+                        borderColor: "#FF0000",
+                        labelString: "CENAS",
+                        borderWidth: 1
             }
                 /*,
                                 {
@@ -130,6 +132,11 @@ $(document).ready(function () {
 
             options: {
                 animation: false,
+                elements: {
+                    point: {
+                        radius: 0
+                    }
+                },
                 tooltips: {
                     //enabled: false,
                     mode: 'single'

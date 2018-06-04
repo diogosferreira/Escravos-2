@@ -86,7 +86,7 @@ $(document).ready(function () {
 
 
 
-    //TAMANHO DOS PONTOS CONSOANTE O ZOOM
+    //VISTA CONSOANTE O ZOOM
     map.on('zoom', function () {
         zoom = map.getZoom();
         console.log(zoom + "   zoom");
@@ -98,7 +98,6 @@ $(document).ready(function () {
             vista = 2;
             desenhaVista2();
         }
-
     });
 
     //MAPA
