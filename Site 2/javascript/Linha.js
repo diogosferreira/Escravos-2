@@ -1,8 +1,11 @@
 class Linha {
-  constructor(id, pPartida, pChegada, emb, des) {
+  constructor(id, pPartida, pChegada, regPartida, regChegada, emb, des) {
     this.id = id;
     this.pPartida = pPartida;
     this.pChegada = pChegada; //viagensHM.get(i).longChegada, viagensHM.get(i).latChegada
+
+    this.regPartida = regPartida;
+    this.regChegada = regChegada;
 
     this.stroke = 0.1;
     this.opacity = 1;
@@ -30,7 +33,8 @@ class Linha {
       'type': 'Feature',
       'properties': {
         'color': this.cor,
-        'id': this.id,
+        'partida': this.regPartida,
+        'chegada': this.regChegada,
         //"description": id,
         'line-width': this.stroke,
         'line-opacity': this.opacity,
