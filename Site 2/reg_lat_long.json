@@ -34,8 +34,9 @@ var regiao = {
   },
             {
                 "region": "Bight of Benin",
-                "lat": 5.015241,
+                "lat": 6.515241,
                 "long": 2.100554
+
   },
             {
                 "region": "Bight of Biafra and Gulf of Guinea Islands",
@@ -109,8 +110,8 @@ var regiao = {
   },
             {
                 "region": "Gold Coast",
-                "lat": 3.715699,
-                "long": 3.746597
+                "lat": 5.5810546875,
+                "long": 5.222246513227375
   },
             {
                 "region": "Grenada",
