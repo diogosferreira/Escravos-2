@@ -3,10 +3,10 @@ JSONArray data, reg_partidas, reg_chegadas;
 
 void setup() {
 
-  //original = loadTable("tabela_original.csv", "header");
-  //criaTabelaAnos();
-  //criaJSON();
-  criaTabelaPrimeiraVista();
+  original = loadTable("tabela_original.csv", "header");
+  criaTabelaAnos();
+  criaJSON();
+  //criaTabelaPrimeiraVista();
 
 
   println("FIM");
@@ -54,21 +54,25 @@ void criaJSON() {
   data = new JSONArray();
 
   for (int i = 0; i < tabela_anos.getRowCount(); i++) {
-    JSONObject viagem = new JSONObject();
-    String ano = tabela_anos.getRow(i).getString(1);
+    if (tabela_anos.getRow(i).getString("regiao_compra").equals("") || tabela_anos.getRow(i).getString("regiao_chegada").equals("")) {
+      continue;
+    } else{
+      JSONObject viagem = new JSONObject();
+      String ano = tabela_anos.getRow(i).getString(1);
 
-    viagem.setString("id", tabela_anos.getRow(i).getString("id"));
-    viagem.setString("ano", ano);
-    viagem.setString("regiao_compra", original.getRow(i).getString("regiao_compra"));
-    viagem.setString("regiao_chegada", original.getRow(i).getString("regiao_chegada"));
-    viagem.setString("embarcados", original.getRow(i).getString("embarcados"));
-    viagem.setString("desembarcados", original.getRow(i).getString("desembarcados"));
+      viagem.setString("id", tabela_anos.getRow(i).getString("id"));
+      viagem.setString("ano", ano);
+      viagem.setString("regiao_compra", tabela_anos.getRow(i).getString("regiao_compra"));
+      viagem.setString("regiao_chegada", tabela_anos.getRow(i).getString("regiao_chegada"));
+      viagem.setString("embarcados", tabela_anos.getRow(i).getString("embarcados"));
+      viagem.setString("desembarcados", tabela_anos.getRow(i).getString("desembarcados"));
 
 
-    data.setJSONObject(i, viagem);
+      data.setJSONObject(i, viagem);
+    }
   }
 
-  saveJSONArray(data, "anos_id.json");
+  saveJSONArray(data, "data.json");
 }
 
 void criaTabelaPrimeiraVista() {
@@ -95,7 +99,7 @@ void criaTabelaPrimeiraVista() {
         println(i + "  j:  " + j + "   ENTROU!");
         println(t.getRow(i).getString("regiao_compra") + "     " + primeira_vista.getRow(j).getString("partida"));
         println(t.getRow(i).getString("regiao_chegada") + "     " + primeira_vista.getRow(j).getString("chegada"));
-        
+
         int novoPartida = primeira_vista.getRow(j).getInt("nPartida") + t.getRow(i).getInt("embarcados");
         int novoChegada = primeira_vista.getRow(j).getInt("nChegada") + t.getRow(i).getInt("desembarcados");
 
