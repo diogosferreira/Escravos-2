@@ -108,6 +108,10 @@ $(document).ready(function () {
             .setHTML('<h3>' + e.features[0].properties.id + '</h3><p> <b>Número de Viagens: </b> ' + e.features[0].properties.viagens + '</p>' + '</h3><p> <b>Número de embarcados: </b> ' + e.features[0].properties.emb + '</p>')
             .addTo(map);
     });
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of b47eb34... Nomes no Hover Linhas
 
 
     map.on('mouseleave', 'linhaLinha', function () {
